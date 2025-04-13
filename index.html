@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Syne:wght@400..800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <title>Hệ thống đặt tour du lịch</title>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="header">
+            <div class="container">
+                <!-- HEADER-TOP -->
+                <div class="header-top">
+                    <!-- LOGO -->
+                    <a href="index.html">
+                        <img
+                            src="./assets/img/logo.svg"
+                            alt="TQD.TRAVEL"
+                            class="logo"
+                        />
+                    </a>
+
+                    <!-- NAVBAR -->
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="index.html">Home page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!">Domestic Tours</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!">International Tours</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!">Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- HEADER ACTION -->
+                    <div class="header-action">
+                        <a href="#!" class="action-link">Log In</a>
+                        <a href="#!" class="action-btn btn">Sign Up</a>
+                    </div>
+                </div>
+
+                <!-- HERO -->
+                <section class="hero">
+                    <!-- HERO-CONTENT -->
+                    <section class="hero-content">
+                        <h1 class="title">
+                            New way to plan your next dream trip
+                            <img
+                                src="./assets/img/smile-icon.png"
+                                alt=""
+                                class="icon"
+                            />
+                        </h1>
+                        <p class="desc">
+                            Create a fully customized day-by-day itinerary for
+                            free. Imagine checking one place for your travel
+                            details and getting a heads up as things happen
+                            throughout your trip
+                        </p>
+
+                        <div class="search-bar">
+                            <div class="input-group">
+                                <i class="fa-solid fa-location-dot icon"></i>
+                                <input type="text" placeholder="Where to go?" />
+                            </div>
+                            <div class="divider"></div>
+                            <div class="input-group">
+                                <i class="fa-solid fa-calendar-days icon"></i>
+                                <input type="text" placeholder="When?" />
+                            </div>
+                            <div class="search-input">
+                                <button class="search-btn btn">Search</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- HERO-MEDIA -->
+                    <figure class="hero-media">
+                        <img
+                            src="./assets/img/tour-guide.svg"
+                            alt=""
+                            class="tour-guide"
+                        />
+                    </figure>
+                </section>
+
+                <!-- HEADER-EXPERIENCE -->
+                <div class="header-experience">
+                    <div class="experience-block">
+                        <img
+                            src="./assets/img/icon-1.svg"
+                            alt=""
+                            class="icon-experience"
+                        />
+                        <div class="experience-content">
+                            <h6 class="heading">Find authentic experiences</h6>
+                            <p class="desc">
+                                Follow your curiosity, feel the joy of real
+                                discoveries, and explore more of the world.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="experience-block">
+                        <img
+                            src="./assets/img/icon-2.svg"
+                            alt=""
+                            class="icon-experience"
+                        />
+                        <div class="experience-content">
+                            <h6 class="heading">Book with your flexibility</h6>
+                            <p class="desc">
+                                Get free cancellation, plan on the go, and book
+                                last minute. Discover the world your way.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="experience-block">
+                        <img
+                            src="./assets/img/icon-3.svg"
+                            alt=""
+                            class="icon-experience"
+                        />
+                        <div class="experience-content">
+                            <h6 class="heading">
+                                Explore the best possibilities
+                            </h6>
+                            <p class="desc">
+                                Enjoy personalized recommendations and
+                                itineraries with over 60,000+ guided tours.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- EXPERIENCE -->
+            <!-- <section class="experience">
+                <div class="container">
+                    <section class="experience-inner">
+                        <div class="image-block">
+                            <img
+                                src="./assets/img/experiencer.png"
+                                alt=""
+                                class="image"
+                            />
+                        </div>
+                        <section class="experience-content">
+                            <h2 class="heading">
+                                Your itinerary and your travel map in one view
+                            </h2>
+                            <p class="desc">
+                                Your itinerary and your travel map in one view.
+                                No more switching between different apps, tabs,
+                                and tools to keep track of your travel plans.
+                                Providing the best.
+                            </p>
+                        </section>
+                    </section>
+                </div>
+            </section> -->
+
+            <!-- BENEFITS -->
+            <!-- <section class="benefits">
+                <div class="container">
+                    <section class="benefit-top">
+                        <h2 class="heading">Trip planner benefits</h2>
+                        <p class="sub-heading">
+                            Create a fully customized day-by-day itinerary for
+                            free. Imagine checking one place for your travel
+                            details.
+                        </p>
+                    </section>
+                    <section class="benefit-inner">
+                        
+                        <div class="benefit-block">
+                            <div class="benefit-image">
+                                <img src="./assets/img/benefit-1.svg" alt="" />
+                            </div>
+                            <section class="benefit-content">
+                                <h5>
+                                    You handle the booking, we'll take it from
+                                    there
+                                </h5>
+                                <p class="desc">
+                                    Unlike other travel apps, we can organize
+                                    your travel plans no matter where you book.
+                                    Simply forward your confirmation emails to
+                                    us we will do the rest.
+                                </p>
+                                <div class="benefit-link">
+                                    <span>Learn how it works</span>
+                                    <img
+                                        src="./assets/img/arrow.svg"
+                                        alt=""
+                                        class="arrow"
+                                    />
+                                </div>
+                            </section>
+                        </div>
+
+                        
+                        <section class="benefit-block">
+                            <div class="benefit-image">
+                                <img src="./assets/img/benefit-2.svg" alt="" />
+                            </div>
+                            <div class="benefit-content">
+                                <h5>
+                                    Helpful reminders and alerts so you don't
+                                    miss a beat
+                                </h5>
+                                <p class="desc">
+                                    Packed with features that give you a leg up
+                                    on changes and help you make the most of all
+                                    your trips, Pathway Pro is where the magic
+                                    happens.
+                                </p>
+                                <div class="benefit-link">
+                                    <span>Learn how it works</span>
+                                    <img
+                                        src="./assets/img/arrow.svg"
+                                        alt=""
+                                        class="arrow"
+                                    />
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+            </section> -->
+
+            <!-- PERFECT -->
+            <section class="perfect">
+                <div class="container">
+                    <section class="perfect-inner">
+                        <div class="perfect-info">
+                            <h2 class="heading">
+                                Build your perfect road trip
+                            </h2>
+                            <div class="info-desc">
+                                <div class="minus-icon">
+                                    <img
+                                        src="./assets/img/minus-icon.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="body">
+                                    <h6>Add places with a click</h6>
+                                    <p class="desc">
+                                        We crawled the web so you don’t have to.
+                                        Easily save mentioned places in short
+                                        times.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="list-desc">
+                                <div class="line">
+                                    <img
+                                        src="./assets/img/plus-icon.svg"
+                                        alt=""
+                                        class="plus-icon"
+                                    />
+                                    <p class="item-desc">Collaborate easily</p>
+                                </div>
+                                <div class="line">
+                                    <img
+                                        src="./assets/img/plus-icon.svg"
+                                        alt=""
+                                        class="plus-icon"
+                                    />
+                                    <p class="item-desc">
+                                        Import flight and hotel reservations
+                                    </p>
+                                </div>
+                                <div class="line">
+                                    <img
+                                        src="./assets/img/plus-icon.svg"
+                                        alt=""
+                                        class="plus-icon"
+                                    />
+                                    <p class="item-desc">
+                                        Optimize your trip road
+                                    </p>
+                                </div>
+                                <div class="line">
+                                    <img
+                                        src="./assets/img/plus-icon.svg"
+                                        alt=""
+                                        class="plus-icon"
+                                    />
+                                    <p class="item-desc">
+                                        Get personalized suggestions
+                                    </p>
+                                </div>
+                                <div class="line">
+                                    <img
+                                        src="./assets/img/plus-icon.svg"
+                                        alt=""
+                                        class="plus-icon"
+                                    />
+                                    <p class="item-desc">
+                                        Export your places to Google Maps
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="perfect-media">
+                            <img
+                                src="./assets/img/perfect-plan.svg"
+                                alt=""
+                                class="perfect-plan"
+                            />
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            <!-- SHARING -->
+            <section class="sharing">
+                <div class="container">
+                    <section class="sharing-inner">
+                        <div class="sharing-media">
+                            <img src="./assets/img/sharing-media.png" alt="" />
+                        </div>
+                        <section class="sharing-content">
+                            <h2 class="heading">
+                                We sharing insider travel knowledge for 20 years
+                            </h2>
+                            <p class="desc">
+                                Our travel agency group tours are aimed at
+                                travelers looking to discover the magic of this
+                                remarkable world. Our adventure leaders will
+                                help you.
+                            </p>
+                            <ul class="list">
+                                <li class="item">
+                                    Supporting millions of travellers since 1982
+                                </li>
+                                <li class="item">
+                                    More than 149 travel titles currently in
+                                    print
+                                </li>
+                                <li class="item">
+                                    The UK’s favourite travel guide publisher
+                                </li>
+                                <li class="item">
+                                    Outstanding customer satisfaction
+                                </li>
+                            </ul>
+                            <a href="#!" class="btn">Learn More</a>
+                        </section>
+                    </section>
+                </div>
+            </section>
+
+            <!-- Domestic Tours -->
+            <section class="domestic-tours">
+                <div class="container">
+                    <h2 class="heading">Domestic Tours</h2>
+                    <div class="product-list">
+                        <!-- PRODUCT-ITEM -->
+                        <div class="product-item">
+                            <div class="inner-image">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/product-5.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
+                            <div class="inner-discount">
+                                <i class="fa-solid fa-bolt"></i>
+                                Discount 30%
+                            </div>
+                            <div class="inner-content">
+                                <h3 class="inner-title">
+                                    <a href="#!">
+                                        Combo Tour 2024: Ha Noi - Lao Cai - Sapa
+                                        4N3D
+                                    </a>
+                                </h3>
+                                <div class="inner-prices">
+                                    <div class="inner-price-old">
+                                        13.650.000<span class="inner-init"
+                                            >đ</span
+                                        >
+                                    </div>
+                                    <div class="inner-price-new">
+                                        2.590.000<span class="inner-unit"
+                                            >đ</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="inner-desc">
+                                    <div class="inner-desc-item">
+                                        Tour code: <b>123456789</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Depature Date: <b>22/07/2024</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Duration: <b>10 days 9 nights</b>
+                                    </div>
+                                </div>
+                                <div class="inner-meta">
+                                    <div class="inner-rating">
+                                        <div class="inner-stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="inner-number">(5)</div>
+                                    </div>
+                                    <div class="inner-stock">
+                                        <div class="inner-label">
+                                            Available seats
+                                        </div>
+                                        <div class="inner-number">10</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCT-ITEM -->
+                        <div class="product-item">
+                            <div class="inner-image">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/product-6.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
+                            <div class="inner-discount">
+                                <i class="fa-solid fa-bolt"></i>
+                                Discount 30%
+                            </div>
+                            <div class="inner-content">
+                                <h3 class="inner-title">
+                                    <a href="#!">
+                                        Tour 2025 Phu Quoc - Thien Duong Bao
+                                        Ngoc (3N2D)
+                                    </a>
+                                </h3>
+                                <div class="inner-prices">
+                                    <div class="inner-price-old">
+                                        13.650.000<span class="inner-init"
+                                            >đ</span
+                                        >
+                                    </div>
+                                    <div class="inner-price-new">
+                                        2.590.000<span class="inner-unit"
+                                            >đ</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="inner-desc">
+                                    <div class="inner-desc-item">
+                                        Tour code: <b>123456789</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Depature Date: <b>22/07/2024</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Duration: <b>10 days 9 nights</b>
+                                    </div>
+                                </div>
+                                <div class="inner-meta">
+                                    <div class="inner-rating">
+                                        <div class="inner-stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="inner-number">(5)</div>
+                                    </div>
+                                    <div class="inner-stock">
+                                        <div class="inner-label">
+                                            Available seats
+                                        </div>
+                                        <div class="inner-number">10</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCT-ITEM -->
+                        <div class="product-item">
+                            <div class="inner-image">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/product-7.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
+                            <div class="inner-discount">
+                                <i class="fa-solid fa-bolt"></i>
+                                Discount 30%
+                            </div>
+                            <div class="inner-content">
+                                <h3 class="inner-title">
+                                    <a href="#!">
+                                        Combo Da Nang 2024: Da Nang - Hoi An- Ba
+                                        Na Hill
+                                    </a>
+                                </h3>
+                                <div class="inner-prices">
+                                    <div class="inner-price-old">
+                                        13.650.000<span class="inner-init"
+                                            >đ</span
+                                        >
+                                    </div>
+                                    <div class="inner-price-new">
+                                        2.590.000<span class="inner-unit"
+                                            >đ</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="inner-desc">
+                                    <div class="inner-desc-item">
+                                        Tour code: <b>123456789</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Depature Date: <b>22/07/2024</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Duration: <b>10 days 9 nights</b>
+                                    </div>
+                                </div>
+                                <div class="inner-meta">
+                                    <div class="inner-rating">
+                                        <div class="inner-stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="inner-number">(5)</div>
+                                    </div>
+                                    <div class="inner-stock">
+                                        <div class="inner-label">
+                                            Available seats
+                                        </div>
+                                        <div class="inner-number">10</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCT-ITEM -->
+                        <div class="product-item">
+                            <div class="inner-image">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/product-8.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
+                            <div class="inner-discount">
+                                <i class="fa-solid fa-bolt"></i>
+                                Discount 30%
+                            </div>
+                            <div class="inner-content">
+                                <h3 class="inner-title">
+                                    <a href="#!">
+                                        Tour 2024: Nha Trang - VinWonders - Dao
+                                        Binh Ba
+                                    </a>
+                                </h3>
+                                <div class="inner-prices">
+                                    <div class="inner-price-old">
+                                        13.650.000<span class="inner-init"
+                                            >đ</span
+                                        >
+                                    </div>
+                                    <div class="inner-price-new">
+                                        2.590.000<span class="inner-unit"
+                                            >đ</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="inner-desc">
+                                    <div class="inner-desc-item">
+                                        Tour code: <b>123456789</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Depature Date: <b>22/07/2024</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Duration: <b>10 days 9 nights</b>
+                                    </div>
+                                </div>
+                                <div class="inner-meta">
+                                    <div class="inner-rating">
+                                        <div class="inner-stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="inner-number">(5)</div>
+                                    </div>
+                                    <div class="inner-stock">
+                                        <div class="inner-label">
+                                            Available seats
+                                        </div>
+                                        <div class="inner-number">10</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCT-ITEM -->
+                        <div class="product-item">
+                            <div class="inner-image">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/product-5.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
+                            <div class="inner-discount">
+                                <i class="fa-solid fa-bolt"></i>
+                                Discount 30%
+                            </div>
+                            <div class="inner-content">
+                                <h3 class="inner-title">
+                                    <a href="#!">
+                                        Combo Tour 2024: Ha Noi - Lao Cai - Sapa
+                                        4N3D
+                                    </a>
+                                </h3>
+                                <div class="inner-prices">
+                                    <div class="inner-price-old">
+                                        13.650.000<span class="inner-init"
+                                            >đ</span
+                                        >
+                                    </div>
+                                    <div class="inner-price-new">
+                                        2.590.000<span class="inner-unit"
+                                            >đ</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="inner-desc">
+                                    <div class="inner-desc-item">
+                                        Tour code: <b>123456789</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Depature Date: <b>22/07/2024</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Duration: <b>10 days 9 nights</b>
+                                    </div>
+                                </div>
+                                <div class="inner-meta">
+                                    <div class="inner-rating">
+                                        <div class="inner-stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="inner-number">(5)</div>
+                                    </div>
+                                    <div class="inner-stock">
+                                        <div class="inner-label">
+                                            Available seats
+                                        </div>
+                                        <div class="inner-number">10</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCT-ITEM -->
+                        <div class="product-item">
+                            <div class="inner-image">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/product-6.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
+                            <div class="inner-discount">
+                                <i class="fa-solid fa-bolt"></i>
+                                Discount 30%
+                            </div>
+                            <div class="inner-content">
+                                <h3 class="inner-title">
+                                    <a href="#!">
+                                        Tour 2025 Phu Quoc - Thien Duong Bao
+                                        Ngoc (3N2D)
+                                    </a>
+                                </h3>
+                                <div class="inner-prices">
+                                    <div class="inner-price-old">
+                                        13.650.000<span class="inner-init"
+                                            >đ</span
+                                        >
+                                    </div>
+                                    <div class="inner-price-new">
+                                        2.590.000<span class="inner-unit"
+                                            >đ</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="inner-desc">
+                                    <div class="inner-desc-item">
+                                        Tour code: <b>123456789</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Depature Date: <b>22/07/2024</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Duration: <b>10 days 9 nights</b>
+                                    </div>
+                                </div>
+                                <div class="inner-meta">
+                                    <div class="inner-rating">
+                                        <div class="inner-stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="inner-number">(5)</div>
+                                    </div>
+                                    <div class="inner-stock">
+                                        <div class="inner-label">
+                                            Available seats
+                                        </div>
+                                        <div class="inner-number">10</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCT-ITEM -->
+                        <div class="product-item">
+                            <div class="inner-image">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/product-7.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
+                            <div class="inner-discount">
+                                <i class="fa-solid fa-bolt"></i>
+                                Discount 30%
+                            </div>
+                            <div class="inner-content">
+                                <h3 class="inner-title">
+                                    <a href="#!">
+                                        Combo Da Nang 2024: Da Nang - Hoi An- Ba
+                                        Na Hill
+                                    </a>
+                                </h3>
+                                <div class="inner-prices">
+                                    <div class="inner-price-old">
+                                        13.650.000<span class="inner-init"
+                                            >đ</span
+                                        >
+                                    </div>
+                                    <div class="inner-price-new">
+                                        2.590.000<span class="inner-unit"
+                                            >đ</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="inner-desc">
+                                    <div class="inner-desc-item">
+                                        Tour code: <b>123456789</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Depature Date: <b>22/07/2024</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Duration: <b>10 days 9 nights</b>
+                                    </div>
+                                </div>
+                                <div class="inner-meta">
+                                    <div class="inner-rating">
+                                        <div class="inner-stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="inner-number">(5)</div>
+                                    </div>
+                                    <div class="inner-stock">
+                                        <div class="inner-label">
+                                            Available seats
+                                        </div>
+                                        <div class="inner-number">10</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCT-ITEM -->
+                        <div class="product-item">
+                            <div class="inner-image">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/product-8.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
+                            <div class="inner-discount">
+                                <i class="fa-solid fa-bolt"></i>
+                                Discount 30%
+                            </div>
+                            <div class="inner-content">
+                                <h3 class="inner-title">
+                                    <a href="#!">
+                                        Tour 2024: Nha Trang - VinWonders - Dao
+                                        Binh Ba
+                                    </a>
+                                </h3>
+                                <div class="inner-prices">
+                                    <div class="inner-price-old">
+                                        13.650.000<span class="inner-init"
+                                            >đ</span
+                                        >
+                                    </div>
+                                    <div class="inner-price-new">
+                                        2.590.000<span class="inner-unit"
+                                            >đ</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="inner-desc">
+                                    <div class="inner-desc-item">
+                                        Tour code: <b>123456789</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Depature Date: <b>22/07/2024</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Duration: <b>10 days 9 nights</b>
+                                    </div>
+                                </div>
+                                <div class="inner-meta">
+                                    <div class="inner-rating">
+                                        <div class="inner-stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="inner-number">(5)</div>
+                                    </div>
+                                    <div class="inner-stock">
+                                        <div class="inner-label">
+                                            Available seats
+                                        </div>
+                                        <div class="inner-number">10</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-link">
+                        <a href="#!" class="btn">View All</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- International Tours -->
+            <section class="domestic-tours">
+                <div class="container">
+                    <h2 class="heading">International Tours</h2>
+                    <div class="product-list">
+                        <!-- PRODUCT-ITEM -->
+                        <div class="product-item">
+                            <div class="inner-image">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/product-5.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
+                            <div class="inner-discount">
+                                <i class="fa-solid fa-bolt"></i>
+                                Discount 30%
+                            </div>
+                            <div class="inner-content">
+                                <h3 class="inner-title">
+                                    <a href="#!">
+                                        Combo Tour 2024: Ha Noi - Lao Cai - Sapa
+                                        4N3D
+                                    </a>
+                                </h3>
+                                <div class="inner-prices">
+                                    <div class="inner-price-old">
+                                        13.650.000<span class="inner-init"
+                                            >đ</span
+                                        >
+                                    </div>
+                                    <div class="inner-price-new">
+                                        2.590.000<span class="inner-unit"
+                                            >đ</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="inner-desc">
+                                    <div class="inner-desc-item">
+                                        Tour code: <b>123456789</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Depature Date: <b>22/07/2024</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Duration: <b>10 days 9 nights</b>
+                                    </div>
+                                </div>
+                                <div class="inner-meta">
+                                    <div class="inner-rating">
+                                        <div class="inner-stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="inner-number">(5)</div>
+                                    </div>
+                                    <div class="inner-stock">
+                                        <div class="inner-label">
+                                            Available seats
+                                        </div>
+                                        <div class="inner-number">10</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCT-ITEM -->
+                        <div class="product-item">
+                            <div class="inner-image">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/product-6.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
+                            <div class="inner-discount">
+                                <i class="fa-solid fa-bolt"></i>
+                                Discount 30%
+                            </div>
+                            <div class="inner-content">
+                                <h3 class="inner-title">
+                                    <a href="#!">
+                                        Tour 2025 Phu Quoc - Thien Duong Bao
+                                        Ngoc (3N2D)
+                                    </a>
+                                </h3>
+                                <div class="inner-prices">
+                                    <div class="inner-price-old">
+                                        13.650.000<span class="inner-init"
+                                            >đ</span
+                                        >
+                                    </div>
+                                    <div class="inner-price-new">
+                                        2.590.000<span class="inner-unit"
+                                            >đ</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="inner-desc">
+                                    <div class="inner-desc-item">
+                                        Tour code: <b>123456789</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Depature Date: <b>22/07/2024</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Duration: <b>10 days 9 nights</b>
+                                    </div>
+                                </div>
+                                <div class="inner-meta">
+                                    <div class="inner-rating">
+                                        <div class="inner-stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="inner-number">(5)</div>
+                                    </div>
+                                    <div class="inner-stock">
+                                        <div class="inner-label">
+                                            Available seats
+                                        </div>
+                                        <div class="inner-number">10</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCT-ITEM -->
+                        <div class="product-item">
+                            <div class="inner-image">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/product-7.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
+                            <div class="inner-discount">
+                                <i class="fa-solid fa-bolt"></i>
+                                Discount 30%
+                            </div>
+                            <div class="inner-content">
+                                <h3 class="inner-title">
+                                    <a href="#!">
+                                        Combo Da Nang 2024: Da Nang - Hoi An- Ba
+                                        Na Hill
+                                    </a>
+                                </h3>
+                                <div class="inner-prices">
+                                    <div class="inner-price-old">
+                                        13.650.000<span class="inner-init"
+                                            >đ</span
+                                        >
+                                    </div>
+                                    <div class="inner-price-new">
+                                        2.590.000<span class="inner-unit"
+                                            >đ</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="inner-desc">
+                                    <div class="inner-desc-item">
+                                        Tour code: <b>123456789</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Depature Date: <b>22/07/2024</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Duration: <b>10 days 9 nights</b>
+                                    </div>
+                                </div>
+                                <div class="inner-meta">
+                                    <div class="inner-rating">
+                                        <div class="inner-stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="inner-number">(5)</div>
+                                    </div>
+                                    <div class="inner-stock">
+                                        <div class="inner-label">
+                                            Available seats
+                                        </div>
+                                        <div class="inner-number">10</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCT-ITEM -->
+                        <div class="product-item">
+                            <div class="inner-image">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/product-8.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
+                            <div class="inner-discount">
+                                <i class="fa-solid fa-bolt"></i>
+                                Discount 30%
+                            </div>
+                            <div class="inner-content">
+                                <h3 class="inner-title">
+                                    <a href="#!">
+                                        Tour 2024: Nha Trang - VinWonders - Dao
+                                        Binh Ba
+                                    </a>
+                                </h3>
+                                <div class="inner-prices">
+                                    <div class="inner-price-old">
+                                        13.650.000<span class="inner-init"
+                                            >đ</span
+                                        >
+                                    </div>
+                                    <div class="inner-price-new">
+                                        2.590.000<span class="inner-unit"
+                                            >đ</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="inner-desc">
+                                    <div class="inner-desc-item">
+                                        Tour code: <b>123456789</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Depature Date: <b>22/07/2024</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Duration: <b>10 days 9 nights</b>
+                                    </div>
+                                </div>
+                                <div class="inner-meta">
+                                    <div class="inner-rating">
+                                        <div class="inner-stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="inner-number">(5)</div>
+                                    </div>
+                                    <div class="inner-stock">
+                                        <div class="inner-label">
+                                            Available seats
+                                        </div>
+                                        <div class="inner-number">10</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCT-ITEM -->
+                        <div class="product-item">
+                            <div class="inner-image">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/product-5.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
+                            <div class="inner-discount">
+                                <i class="fa-solid fa-bolt"></i>
+                                Discount 30%
+                            </div>
+                            <div class="inner-content">
+                                <h3 class="inner-title">
+                                    <a href="#!">
+                                        Combo Tour 2024: Ha Noi - Lao Cai - Sapa
+                                        4N3D
+                                    </a>
+                                </h3>
+                                <div class="inner-prices">
+                                    <div class="inner-price-old">
+                                        13.650.000<span class="inner-init"
+                                            >đ</span
+                                        >
+                                    </div>
+                                    <div class="inner-price-new">
+                                        2.590.000<span class="inner-unit"
+                                            >đ</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="inner-desc">
+                                    <div class="inner-desc-item">
+                                        Tour code: <b>123456789</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Depature Date: <b>22/07/2024</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Duration: <b>10 days 9 nights</b>
+                                    </div>
+                                </div>
+                                <div class="inner-meta">
+                                    <div class="inner-rating">
+                                        <div class="inner-stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="inner-number">(5)</div>
+                                    </div>
+                                    <div class="inner-stock">
+                                        <div class="inner-label">
+                                            Available seats
+                                        </div>
+                                        <div class="inner-number">10</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCT-ITEM -->
+                        <div class="product-item">
+                            <div class="inner-image">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/product-6.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
+                            <div class="inner-discount">
+                                <i class="fa-solid fa-bolt"></i>
+                                Discount 30%
+                            </div>
+                            <div class="inner-content">
+                                <h3 class="inner-title">
+                                    <a href="#!">
+                                        Tour 2025 Phu Quoc - Thien Duong Bao
+                                        Ngoc (3N2D)
+                                    </a>
+                                </h3>
+                                <div class="inner-prices">
+                                    <div class="inner-price-old">
+                                        13.650.000<span class="inner-init"
+                                            >đ</span
+                                        >
+                                    </div>
+                                    <div class="inner-price-new">
+                                        2.590.000<span class="inner-unit"
+                                            >đ</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="inner-desc">
+                                    <div class="inner-desc-item">
+                                        Tour code: <b>123456789</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Depature Date: <b>22/07/2024</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Duration: <b>10 days 9 nights</b>
+                                    </div>
+                                </div>
+                                <div class="inner-meta">
+                                    <div class="inner-rating">
+                                        <div class="inner-stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="inner-number">(5)</div>
+                                    </div>
+                                    <div class="inner-stock">
+                                        <div class="inner-label">
+                                            Available seats
+                                        </div>
+                                        <div class="inner-number">10</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCT-ITEM -->
+                        <div class="product-item">
+                            <div class="inner-image">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/product-7.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
+                            <div class="inner-discount">
+                                <i class="fa-solid fa-bolt"></i>
+                                Discount 30%
+                            </div>
+                            <div class="inner-content">
+                                <h3 class="inner-title">
+                                    <a href="#!">
+                                        Combo Da Nang 2024: Da Nang - Hoi An- Ba
+                                        Na Hill
+                                    </a>
+                                </h3>
+                                <div class="inner-prices">
+                                    <div class="inner-price-old">
+                                        13.650.000<span class="inner-init"
+                                            >đ</span
+                                        >
+                                    </div>
+                                    <div class="inner-price-new">
+                                        2.590.000<span class="inner-unit"
+                                            >đ</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="inner-desc">
+                                    <div class="inner-desc-item">
+                                        Tour code: <b>123456789</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Depature Date: <b>22/07/2024</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Duration: <b>10 days 9 nights</b>
+                                    </div>
+                                </div>
+                                <div class="inner-meta">
+                                    <div class="inner-rating">
+                                        <div class="inner-stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="inner-number">(5)</div>
+                                    </div>
+                                    <div class="inner-stock">
+                                        <div class="inner-label">
+                                            Available seats
+                                        </div>
+                                        <div class="inner-number">10</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCT-ITEM -->
+                        <div class="product-item">
+                            <div class="inner-image">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/product-8.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
+                            <div class="inner-discount">
+                                <i class="fa-solid fa-bolt"></i>
+                                Discount 30%
+                            </div>
+                            <div class="inner-content">
+                                <h3 class="inner-title">
+                                    <a href="#!">
+                                        Tour 2024: Nha Trang - VinWonders - Dao
+                                        Binh Ba
+                                    </a>
+                                </h3>
+                                <div class="inner-prices">
+                                    <div class="inner-price-old">
+                                        13.650.000<span class="inner-init"
+                                            >đ</span
+                                        >
+                                    </div>
+                                    <div class="inner-price-new">
+                                        2.590.000<span class="inner-unit"
+                                            >đ</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="inner-desc">
+                                    <div class="inner-desc-item">
+                                        Tour code: <b>123456789</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Depature Date: <b>22/07/2024</b>
+                                    </div>
+                                    <div class="inner-desc-item">
+                                        Duration: <b>10 days 9 nights</b>
+                                    </div>
+                                </div>
+                                <div class="inner-meta">
+                                    <div class="inner-rating">
+                                        <div class="inner-stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="inner-number">(5)</div>
+                                    </div>
+                                    <div class="inner-stock">
+                                        <div class="inner-label">
+                                            Available seats
+                                        </div>
+                                        <div class="inner-number">10</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-link">
+                        <a href="#!" class="btn">View All</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TRAVEL DIARY -->
+            <section class="travel-diary">
+                <div class="container">
+                    <!-- DIARY-HEADER -->
+                    <div class="diary-header">
+                        <h2 class="heading">Latest travel diary</h2>
+                        <a href="#!" class="btn">Read All Blog</a>
+                    </div>
+
+                    <!-- DIARY-LIST -->
+                    <div class="diary-list">
+                        <!-- DIARY-ITEM -->
+                        <div class="diary-item">
+                            <figure class="diary-thumb">
+                                <a href="#!"
+                                    ><img src="./assets/img/diary-1.png" alt=""
+                                /></a>
+                            </figure>
+                            <h3 class="heading">
+                                <a href="#!"
+                                    >8 Amazing Places to Celebrate New Year
+                                    2025</a
+                                >
+                            </h3>
+                            <p class="desc">
+                                Whether it’s champagne to ring in the New Year,
+                                a countdown party, or an intimate dinner,
+                                everyone plans something special...
+                            </p>
+                            <p class="learn-more">Learn More</p>
+                        </div>
+
+                        <!-- DIARY-ITEM -->
+                        <div class="diary-item">
+                            <figure class="diary-thumb">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/diary-2.png"
+                                        alt=""
+                                    />
+                                </a>
+                            </figure>
+                            <h3 class="heading">
+                                <a href="#!"
+                                    >8 Amazing Places to Celebrate New Year
+                                    2025</a
+                                >
+                            </h3>
+                            <p class="desc">
+                                Whether it’s champagne to ring in the New Year,
+                                a countdown party, or an intimate dinner,
+                                everyone plans something special...
+                            </p>
+                            <div class="learn-more">Learn More</div>
+                        </div>
+
+                        <!-- DIARY-ITEM -->
+                        <div class="diary-item">
+                            <figure class="diary-thumb">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/diary-3.png"
+                                        alt=""
+                                    />
+                                </a>
+                            </figure>
+                            <h3 class="heading">
+                                <a href="#!"
+                                    >8 Amazing Places to Celebrate New Year
+                                    2025</a
+                                >
+                            </h3>
+                            <p class="desc">
+                                Whether it’s champagne to ring in the New Year,
+                                a countdown party, or an intimate dinner,
+                                everyone plans something special...
+                            </p>
+                            <div class="learn-more">Learn More</div>
+                        </div>
+
+                        <!-- DIARY-ITEM -->
+                        <div class="diary-item">
+                            <figure class="diary-thumb">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/diary-4.png"
+                                        alt=""
+                                    />
+                                </a>
+                            </figure>
+                            <h3 class="heading">
+                                <a href="#!">
+                                    8 Amazing Places to Celebrate New Year 2025
+                                </a>
+                            </h3>
+                            <p class="desc">
+                                Whether it’s champagne to ring in the New Year,
+                                a countdown party, or an intimate dinner,
+                                everyone plans something special...
+                            </p>
+                            <div class="learn-more">Learn More</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TRAVEL MATTER -->
+            <section class="travel-matter">
+                <div class="container">
+                    <section class="matter-inner">
+                        <img
+                            src="./assets/img/matter-avatar.png"
+                            alt=""
+                            class="matter-avatar"
+                        />
+                        <div class="matter-info">
+                            <h2 class="heading">Travel matter</h2>
+                            <p class="desc">
+                                We believe sustainable tourism matters. MAKE
+                                TRAVEL MATTER® is our commitment to preserving
+                                the planet.
+                            </p>
+                        </div>
+                        <a href="#!" class="matter-btn btn">Find Destination</a>
+                    </section>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <section class="footer-inner">
+                    <!-- FOOTER-LIST -->
+                    <div class="footer-list">
+                        <!-- FOOTER ITEM -->
+                        <div class="footer-item">
+                            <h3 class="heading">Booking</h3>
+                            <ul class="list">
+                                <li class="item">My Booking</li>
+                                <li class="item">Submit Trip Feedback</li>
+                                <li class="item">Safe Travels Hub</li>
+                                <li class="item">Travel Alerts</li>
+                                <li class="item">Vaccinations & Testing</li>
+                                <li class="item">Flexible Booking</li>
+                            </ul>
+                        </div>
+
+                        <!-- FOOTER ITEM -->
+                        <div class="footer-item">
+                            <h3 class="heading">Company</h3>
+                            <ul class="list">
+                                <li class="item">About us</li>
+                                <li class="item">News & Blog</li>
+                                <li class="item">Press Center</li>
+                                <li class="item">Investors</li>
+                                <li class="item">Suppliers</li>
+                                <li class="item">Terms & Conditions</li>
+                                <li class="item">Privacy Policy</li>
+                            </ul>
+                        </div>
+
+                        <!-- FOOTER ITEM -->
+                        <div class="footer-item">
+                            <h3 class="heading">Contact</h3>
+                            <ul class="list">
+                                <li class="item">Get In Touch</li>
+                                <li class="item">Live Chat</li>
+                                <li class="item">FAQ</li>
+                                <li class="item">Testimonials</li>
+                            </ul>
+                        </div>
+
+                        <!-- FOOTER ITEM -->
+                        <div class="footer-item">
+                            <h3 class="heading">Subscribe our newsletter</h3>
+                            <div class="list">
+                                <div class="line">
+                                    <input
+                                        type="email"
+                                        placeholder="Enter your email"
+                                    />
+                                    <a href="#!" class="btn">Subcribe</a>
+                                </div>
+                                <h3 class="follow heading">Follow us</h3>
+                                <div class="social-icons">
+                                    <div class="icon-wrapper">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </div>
+                                    <div class="icon-wrapper">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                    <div class="icon-wrapper">
+                                        <i class="fa-brands fa-x-twitter"></i>
+                                    </div>
+                                    <div class="icon-wrapper">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </div>
+                                </div>
+
+                                <div class="region-selector">
+                                    <label for="region">Change Region</label>
+                                    <select id="region">
+                                        <option>Global</option>
+                                        <option>Asia</option>
+                                        <option>Europe</option>
+                                        <option>America</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="separate"></div>
+
+                    <p class="copyright">
+                        Copyright 2025 UIHUT All Rights Reserved
+                    </p>
+                </section>
+            </div>
+        </footer>
+    </body>
+</html>
