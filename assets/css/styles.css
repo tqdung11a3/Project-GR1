@@ -307,8 +307,23 @@ a {
 }
 
 @media (max-width: 575.98px) {
-    .hero-content .search-bar .search-btn {
-        min-width: 70px;
+    .hero-content .title {
+        font-size: 6.2rem;
+    }
+
+    .hero-content .search-bar {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-content .search-bar .input-group,
+    .hero-content .search-bar .search-input {
+        width: 100%;
+    }
+
+    .hero-content .search-bar .search-input .search-btn {
+        width: 100%;
     }
 }
 
@@ -997,6 +1012,17 @@ a {
 
     .matter-info {
         display: none;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .travel-matter .matter-inner {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .matter-info {
+        display: block;
     }
 }
 
