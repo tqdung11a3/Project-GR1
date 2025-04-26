@@ -175,6 +175,13 @@ a {
     }
 }
 
+@media (max-width: 575.98px) {
+    .header-top .header-action {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
 /* END HEADER TOP */
 
 /* HERO */
@@ -1006,23 +1013,8 @@ a {
 
 @media (max-width: 767.98px) {
     .travel-matter .matter-inner {
-        gap: 0;
-        justify-content: space-between;
-    }
-
-    .matter-info {
-        display: none;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .travel-matter .matter-inner {
         flex-direction: column;
         gap: 15px;
-    }
-
-    .matter-info {
-        display: block;
     }
 }
 
@@ -1046,7 +1038,7 @@ a {
 
 .footer .inner-top .inner-title {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 1;
     color: var(--White);
     width: 389px;
@@ -1069,7 +1061,7 @@ a {
     border: 1px solid #99a2a5;
     border-radius: 8px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .footer .inner-top .inner-form input::placeholder {
@@ -1082,7 +1074,7 @@ a {
     border-radius: 8px;
     padding: 0 23.5px;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: var(--White);
     border: 0;
     cursor: pointer;
@@ -1105,7 +1097,7 @@ a {
 
 .footer .inner-middle .inner-links a {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #25282b;
 }
 
@@ -1122,7 +1114,7 @@ a {
 }
 
 .footer .inner-middle .inner-socials a {
-    font-size: 24px;
+    font-size: 2.4rem;
     color: #25282b;
 }
 
@@ -1145,7 +1137,7 @@ a {
 
 .footer .inner-bottom .inner-copyright {
     font-weight: 500;
-    font-size: 13px;
+    font-size: 1.3rem;
     color: #667479;
 }
 
@@ -1165,10 +1157,353 @@ a {
 
 .footer .inner-bottom .inner-links a {
     font-weight: 500;
-    font-size: 13px;
+    font-size: 1.3rem;
     color: #667479;
 }
 
 .footer .inner-bottom .inner-links a:hover {
     color: var(--orange-primary);
 }
+
+@media (max-width: 991.98px) {
+    .footer .inner-top {
+        flex-wrap: wrap;
+    }
+
+    .footer .inner-top .inner-title {
+        width: 100%;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .footer .inner-middle {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .footer .inner-button {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .footer .inner-button .inner-copyright {
+        order: 2;
+        flex: none;
+    }
+
+    .footer .inner-button .inner-logo {
+        order: 0;
+    }
+
+    .footer .inner-button .inner-links {
+        order: 1;
+        width: 100%;
+        flex: none;
+    }
+
+    .footer .inner-button .inner-links ul {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .footer .inner-button .inner-links ul {
+        flex-wrap: wrap;
+        gap: 10px 25px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .footer {
+        border-radius: 25px 25px 0 0;
+        padding: 40px 0;
+    }
+
+    .footer .inner-top {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .footer .inner-top .inner-form {
+        flex-wrap: wrap;
+    }
+
+    .footer .inner-top .inner-form button {
+        width: 100%;
+        font-size: 1.4rem;
+    }
+
+    .footer .inner-middle {
+        margin-top: 30px;
+    }
+
+    .footer .inner-middle .inner-socials ul {
+        gap: 25px;
+    }
+
+    .footer .inner-button {
+        padding-top: 30px;
+        margin-top: 30px;
+    }
+
+    .footer .inner-button .inner-links ul {
+        gap: 25px;
+    }
+}
+
+/* END FOOTER */
+
+/* BOX CONTACT */
+.box-contact {
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    z-index: 999;
+    background: var(--orange-primary);
+    box-shadow: 0px 2px 4px 0px #00000026;
+    border-radius: 10px;
+    padding: 12px 10px;
+}
+
+.box-contact ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.box-contact ul a {
+    font-size: 1.9rem;
+    color: var(--White);
+}
+
+@media (max-width: 575.98px) {
+    .box-contact {
+        display: none;
+    }
+}
+/* END BOX CONTACT */
+
+/* ----------------------------------------------------------- */
+
+/* TRANG DANH SACH TOUR */
+
+/* BOX BREADCRUMB */
+.box-breadcrumb {
+    position: relative;
+}
+
+.box-breadcrumb .inner-image {
+    height: 253px;
+}
+
+.box-breadcrumb .inner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-breadcrumb .inner-content {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(69, 2, 199, 0.5) 100%
+    );
+    box-shadow: 0px 0px 4px 0px #00000040;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+
+.box-breadcrumb .inner-content .inner-title {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 3.2rem;
+    color: var(--White);
+    line-height: 1.375;
+}
+
+.box-breadcrumb .inner-content .inner-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 16px;
+}
+
+.box-breadcrumb .inner-content .inner-links ul li {
+    display: inline-flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.box-breadcrumb .inner-content .inner-links ul li a {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--White);
+    letter-spacing: 0.15px;
+    line-height: 1.5;
+}
+
+.box-breadcrumb .inner-content .inner-links ul li i {
+    font-size: 1rem;
+    color: var(--White);
+}
+
+.box-breadcrumb .inner-content .inner-links ul li:last-child i {
+    display: none;
+}
+
+@media (max-width: 991.98px) {
+    .box-breadcrumb .inner-content {
+        padding-bottom: 15px;
+    }
+
+    .box-breadcrumb .inner-content .inner-title {
+        font-size: 2.4rem;
+    }
+
+    .box-breadcrumb .inner-content .inner-links ul {
+        gap: 5 10px;
+    }
+
+    .box-breadcrumb .inner-content .inner-links ul li {
+        gap: 10px;
+    }
+
+    .box-breadcrumb .inner-content .inner-links ul li a {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .box-breadcrumb .inner-content .inner-title {
+        font-size: 2rem;
+    }
+
+    .box-breadcrumb .inner-content .inner-links ul li a {
+        font-size: 1.1rem;
+    }
+
+    .box-breadcrumb .inner-content .inner-links ul li i {
+        font-size: 0.8rem;
+    }
+}
+/* END BOX BREADCRUMB */
+
+/* SECTION 9 */
+.section-9 {
+    padding: 60px 0;
+}
+
+.section-9 .inner-wrap {
+    display: grid;
+    grid-template-columns: 279fr 882fr;
+    gap: 23px;
+}
+/* END SECTION 9 */
+
+/* BOX FILTER */
+.box-filter {
+    background: var(--White);
+    box-shadow: 0px 0px 4px 0px #00000040;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.box-filter .inner-head {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-filter .inner-head .inner-title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.555;
+    color: var(--orange-primary);
+}
+
+.box-filter .inner-head i {
+    font-size: 2rem;
+    color: var(--orange-primary);
+}
+
+.box-filter .inner-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.box-filter .inner-group .inner-label {
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    color: #898b8d;
+}
+
+.box-filter .inner-group select,
+.box-filter .inner-group input[type="date"] {
+    width: 100%;
+    height: 38px;
+    padding: 0 14px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    color: #898b8d;
+    border: 1px solid #898b8d;
+    border-radius: 5px;
+    outline: none;
+}
+
+.box-filter .inner-group .inner-input-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.box-filter .inner-group .inner-input-item {
+    display: flex;
+    align-items: center;
+    height: 38px;
+    padding: 0 14px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    color: #898b8d;
+    border: 1px solid #898b8d;
+    border-radius: 5px;
+}
+
+.box-filter .inner-group .inner-input-label {
+    flex: 1;
+}
+
+.box-filter .inner-group .inner-input-item input {
+    width: 45px;
+    border: 0;
+    color: #898b8d;
+    font-size: 1.4rem;
+}
+
+.box-filter .inner-group .inner-button {
+    width: 100%;
+    height: 38px;
+    border: 0;
+    background: var(--orange-primary);
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--White);
+    cursor: pointer;
+}
+/* END BOX FILTER */

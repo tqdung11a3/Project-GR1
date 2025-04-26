@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Syne:wght@400..800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <title>Danh sách tour</title>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="header">
+            <div class="container">
+                <div class="inner-wrap">
+                    <!-- HEADER-TOP -->
+                    <div class="header-top">
+                        <!-- MENU MOBILE -->
+                        <button class="inner-menu-mobile">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <!-- LOGO -->
+                        <div class="inner-logo">
+                            <a href="index.html">
+                                <img
+                                    src="./assets/img/logo.svg"
+                                    alt="TQD.TRAVEL"
+                                    class="logo"
+                                />
+                            </a>
+                        </div>
+
+                        <!-- NAVBAR -->
+                        <nav class="nav">
+                            <ul class="nav-list">
+                                <li class="nav-item">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#!">Domestic Tours</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#!">International Tours</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#!">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#!">Blog</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <!-- HEADER ACTION -->
+                        <div class="header-action">
+                            <a href="#!" class="action-link">Log In</a>
+                            <a href="#!" class="action-btn btn">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- BOX BREADCRUMB -->
+            <div class="box-breadcrumb">
+                <div class="inner-image">
+                    <img src="./assets/img/banner-6.jpg" alt="" />
+                </div>
+                <div class="inner-content">
+                    <div class="container">
+                        <h1 class="inner-title">Tour Nước Ngoài</h1>
+                        <nav class="inner-links">
+                            <ul>
+                                <li>
+                                    <a href="#!">Trang Chủ</a>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </li>
+                                <li>
+                                    <a href="#!">Tour Nước Ngoài</a>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- END BOX BREADCRUMB -->
+
+            <!-- SECTION 9 -->
+            <section class="section-9">
+                <div class="container">
+                    <div class="inner-wrap">
+                        <div class="inner-left">
+                            <div class="box-filter">
+                                <div class="inner-head">
+                                    <div class="inner-title">Bo Loc</div>
+                                    <i class="fa-solid fa-filter"></i>
+                                </div>
+                                <div class="inner-body">
+                                    <div class="inner-group">
+                                        <div class="inner-label">Diem di</div>
+                                        <select name="" id="">
+                                            <option value="">
+                                                -- Chon diem di --
+                                            </option>
+                                            <option value="">
+                                                -- Ha Noi --
+                                            </option>
+                                            <option value="">
+                                                -- Da Nang --
+                                            </option>
+                                            <option value="">
+                                                -- Nha Trang --
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                    <div class="inner-group">
+                                        <div class="inner-label">Diem den</div>
+                                        <select name="" id="">
+                                            <option value="">
+                                                -- Chon diem den --
+                                            </option>
+                                            <option value="">
+                                                -- Ha Noi --
+                                            </option>
+                                            <option value="">
+                                                -- Da Nang --
+                                            </option>
+                                            <option value="">
+                                                -- Nha Trang --
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                    <div class="inner-group">
+                                        <div class="inner-label">
+                                            Ngay khoi hanh
+                                        </div>
+                                        <input type="date" />
+                                    </div>
+
+                                    <div class="inner-group">
+                                        <div class="inner-label">
+                                            So Luong Hanh Khach
+                                        </div>
+                                        <div class="inner-input-list">
+                                            <div class="inner-input-item">
+                                                <div class="inner-input-label">
+                                                    Nguoi lon:
+                                                </div>
+                                                <input
+                                                    type="number"
+                                                    name=""
+                                                    value="0"
+                                                />
+                                            </div>
+
+                                            <div class="inner-input-item">
+                                                <div class="inner-input-label">
+                                                    Tre em:
+                                                </div>
+                                                <input
+                                                    type="number"
+                                                    name=""
+                                                    value="0"
+                                                />
+                                            </div>
+
+                                            <div class="inner-input-item">
+                                                <div class="inner-input-label">
+                                                    Em be:
+                                                </div>
+                                                <input
+                                                    type="number"
+                                                    name=""
+                                                    value="0"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="inner-group">
+                                        <div class="inner-label">Muc gia</div>
+                                        <select name="" id="">
+                                            <option value="">
+                                                -- Chon khoang gia --
+                                            </option>
+                                            <option value="">
+                                                -- Duoi 1tr --
+                                            </option>
+                                            <option value="">
+                                                -- 1tr - 3tr --
+                                            </option>
+                                            <option value="">
+                                                -- 3tr - 5tr --
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                    <div class="inner-group">
+                                        <button class="inner-button">
+                                            Ap dung ngay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner-right">Danh sach tour</div>
+                    </div>
+                </div>
+            </section>
+            <!-- END SECTION 9 -->
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <div class="inner-top">
+                    <div class="inner-title">
+                        Sign up now to stay updated with our latest programs.
+                    </div>
+                    <form action="" class="inner-form">
+                        <input
+                            type="email"
+                            name=""
+                            placeholder="Enter your email..."
+                        />
+                        <button>Sign Up</button>
+                    </form>
+                </div>
+                <div class="inner-middle">
+                    <nav class="inner-links">
+                        <ul>
+                            <li>
+                                <a href="#">Home </a>
+                            </li>
+                            <li>
+                                <a href="#">Domestic Tours</a>
+                            </li>
+                            <li>
+                                <a href="#">International Tours</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="inner-socials">
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="inner-bottom">
+                    <div class="inner-copyright">
+                        Copyright 2025 UIHUT All Rights Reserved
+                    </div>
+                    <div class="inner-logo">
+                        <a href="#">
+                            <img src="./assets/img/logo.svg" alt="" />
+                        </a>
+                    </div>
+                    <nav class="inner-links">
+                        <ul>
+                            <li>
+                                <a href="#">Terms of Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <!-- BOX CONTACT -->
+        <nav class="box-contact">
+            <ul>
+                <li>
+                    <a href="#!" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#!" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#!" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#!" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- END BOX CONTACT -->
+    </body>
+</html>
