@@ -3,1341 +3,1741 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <title>Trang chủ</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Syne:wght@400..800&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.7/viewer.min.css"
     />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <title>Trang chủ</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <!-- HEADER -->
+    <!-- Header -->
     <header class="header">
       <div class="container">
         <div class="inner-wrap">
-          <!-- HEADER-TOP -->
-          <div class="header-top">
-            <!-- MENU MOBILE -->
-            <button class="inner-menu-mobile">
-              <i class="fa-solid fa-bars"></i>
-            </button>
-            <!-- LOGO -->
-            <div class="inner-logo">
-              <a href="./index.html">
-                <img
-                  src="./assets/images/logo.svg"
-                  alt="TQD.TRAVEL"
-                  class="logo"
+          <button class="inner-menu-mobile">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="inner-logo">
+            <a href="index.html">
+              <img src="assets/images/logo.svg" alt="TQD.TRAVEL" />
+            </a>
+          </div>
+          <nav class="inner-menu">
+            <ul>
+              <li>
+                <a href="index.html" class="active"> Trang chủ </a>
+              </li>
+              <li>
+                <a href="#"> Tour Trong Nước </a>
+                <i class="fa-solid fa-caret-down"></i>
+                <ul>
+                  <li>
+                    <a href="#" class="active">Tour Miền Bắc</a>
+                  </li>
+                  <li>
+                    <a href="#">Tour Miền Trung</a>
+                  </li>
+                  <li>
+                    <a href="#">Tour Miền Nam</a>
+                  </li>
+                  <li>
+                    <a href="#">Tour Xuyên Việt</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"> Tour Nước Ngoài </a>
+                <i class="fa-solid fa-caret-down"></i>
+                <ul>
+                  <li>
+                    <a href="#">Tour Châu Á</a>
+                  </li>
+                  <li>
+                    <a href="#">Tour Châu Âu</a>
+                  </li>
+                  <li>
+                    <a href="#">Tour Châu Mỹ</a>
+                  </li>
+                  <li>
+                    <a href="#">Tour Châu Úc</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"> Tin Tức </a>
+              </li>
+              <li>
+                <a href="#"> Liên hệ </a>
+              </li>
+            </ul>
+            <div class="inner-overlay"></div>
+          </nav>
+
+          <div class="inner-cart">
+            <a href="#">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span>1</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Section 1 -->
+    <div class="section-1">
+      <div class="container">
+        <div class="inner-wrap">
+          <h1 class="inner-title" data-aos="fade-up" data-aos-duration="800">
+            Du lịch Châu Á - Khám phá Mỹ, Úc, Âu
+            <br />
+            Đi nơi đâu bạn muốn
+          </h1>
+          <p
+            class="inner-desc"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="150"
+          >
+            Khám phá thế giới cùng các chuyên gia địa phương, từng chuyến đi
+            được thiết kế riêng. Một hành tinh. Vô vàn khả năng. Những điểm đến
+            tuyệt vời nhất trên thế giới.
+          </p>
+          <form
+            action=""
+            class="inner-form"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="300"
+          >
+            <div class="inner-box inner-address">
+              <div class="inner-input-group">
+                <i class="fa-solid fa-location-dot inner-icon"></i>
+                <input
+                  type="text"
+                  placeholder="Bạn muốn đi đâu?"
+                  class="inner-input"
                 />
-              </a>
+                <i class="fa-solid fa-angle-down inner-down"></i>
+              </div>
+              <div class="inner-suggest">
+                <div class="inner-suggest-title">
+                  <i class="fa-solid fa-location-dot"></i> Địa Điểm Hot
+                </div>
+                <div class="inner-suggest-list">
+                  <div class="inner-item">
+                    <div class="inner-item-image">
+                      <img src="assets/images/product-1.jpg" alt="" />
+                    </div>
+                    <div class="inner-item-content">
+                      <div class="inner-item-title">Nhật Bản</div>
+                      <div class="inner-item-desc">50 tours</div>
+                    </div>
+                  </div>
+                  <div class="inner-item">
+                    <div class="inner-item-image">
+                      <img src="assets/images/product-2.jpg" alt="" />
+                    </div>
+                    <div class="inner-item-content">
+                      <div class="inner-item-title">Phú Quốc</div>
+                      <div class="inner-item-desc">50 tours</div>
+                    </div>
+                  </div>
+                  <div class="inner-item">
+                    <div class="inner-item-image">
+                      <img src="assets/images/product-3.jpg" alt="" />
+                    </div>
+                    <div class="inner-item-content">
+                      <div class="inner-item-title">Singapore</div>
+                      <div class="inner-item-desc">50 tours</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <!-- NAVBAR -->
-            <nav class="nav">
-              <ul class="nav-list">
-                <li class="nav-item">
-                  <a href="./index.html" class="active">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a href="./domestic-tours.html">Domestic Tours</a>
-                </li>
-                <li class="nav-item">
-                  <a href="./domestic-tours.html">International Tours</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#!">About</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#!">Blog</a>
-                </li>
-              </ul>
-            </nav>
-
-            <!-- HEADER ACTION -->
-            <div class="header-action">
-              <a href="#!" class="action-link">Log In</a>
-              <a href="#!" class="action-btn btn">Sign Up</a>
+            <div class="inner-box inner-user">
+              <div class="inner-input-group">
+                <i class="fa-solid fa-user inner-icon"></i>
+                <input
+                  type="text"
+                  placeholder="Số lượng"
+                  class="inner-input"
+                  readonly
+                />
+                <i class="fa-solid fa-angle-down inner-down"></i>
+              </div>
+              <div class="inner-quantity">
+                <div class="inner-item">
+                  <div class="inner-label">Người lớn</div>
+                  <div class="inner-count">
+                    <span class="inner-down"> - </span>
+                    <span class="inner-number">1</span>
+                    <span class="inner-up"> + </span>
+                  </div>
+                </div>
+                <div class="inner-item">
+                  <div class="inner-label">Trẻ em</div>
+                  <div class="inner-count">
+                    <span class="inner-down"> - </span>
+                    <span class="inner-number">0</span>
+                    <span class="inner-up"> + </span>
+                  </div>
+                </div>
+                <div class="inner-item">
+                  <div class="inner-label">Em bé</div>
+                  <div class="inner-count">
+                    <span class="inner-down"> - </span>
+                    <span class="inner-number">0</span>
+                    <span class="inner-up"> + </span>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="inner-box inner-calendar">
+              <div class="inner-input-group">
+                <i class="fa-solid fa-calendar inner-icon"></i>
+                <input
+                  type="text"
+                  placeholder="Lịch khởi hành"
+                  class="inner-input"
+                />
+                <i class="fa-solid fa-angle-down inner-down"></i>
+              </div>
+            </div>
+            <button class="inner-button">
+              <i class="fa-solid fa-magnifying-glass"></i> Tìm Kiếm
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End Section 1 -->
 
-            <!-- CART -->
-            <div class="inner-cart">
-              <a href="./cart.html">
-                <img src="assets/images/icon-cart.svg" alt="" />
-                <span>1</span>
-              </a>
+    <!-- Section 2 -->
+    <div
+      class="section-2"
+      data-aos="fade-up"
+      data-aos-duration="800"
+      data-aos-delay="450"
+    >
+      <div class="container">
+        <div class="inner-wrap">
+          <div class="inner-info">
+            <h2 class="inner-title">
+              ƯU ĐÃI 2025
+              <br />
+              TOUR GIỜ CHÓT
+            </h2>
+            <p class="inner-desc">
+              Cơ hội cuối cùng để đặt tour mơ ước với giá siêu ưu đãi – đừng bỏ
+              lỡ!
+            </p>
+            <div class="inner-clock-title">Kết thúc sau</div>
+            <div class="inner-clock-number" clock-expire="2025-02-20T17:00:00">
+              <div class="inner-item">
+                <div class="inner-number">00</div>
+                <div class="inner-label">Ngày</div>
+              </div>
+              <div class="inner-item">
+                <div class="inner-number">00</div>
+                <div class="inner-label">Giờ</div>
+              </div>
+              <div class="inner-item">
+                <div class="inner-number">00</div>
+                <div class="inner-label">Phút</div>
+              </div>
+              <div class="inner-item">
+                <div class="inner-number">00</div>
+                <div class="inner-label">Giây</div>
+              </div>
+            </div>
+            <div class="inner-discount-title">GIẢM ĐẾN</div>
+            <div class="inner-discount-price">
+              990.000<span class="inner-unit">đ</span>
             </div>
           </div>
-
-          <!-- HERO -->
-          <section class="hero">
-            <!-- HERO-CONTENT -->
-            <section class="hero-content">
-              <h1 class="title" data-aos="fade-up" data-aos-duration="800">
-                New way to plan your next dream trip
-                <img src="./assets/images/smile-icon.png" alt="" class="icon" />
-              </h1>
-              <p
-                class="desc"
-                data-aos="fade-up"
-                data-aos-duration="800"
-                data-aos-delay="150"
-              >
-                Create a fully customized day-by-day itinerary for free. Imagine
-                checking one place for your travel details and getting a heads
-                up as things happen throughout your trip
-              </p>
-
-              <form
-                action=""
-                class="search-bar"
-                data-aos="fade-up"
-                data-aos-duration="800"
-                data-aos-delay="300"
-              >
-                <div class="input-group">
-                  <i class="fa-solid fa-location-dot icon"></i>
-                  <input type="text" placeholder="Where to go?" />
+          <div class="inner-list">
+            <div class="swiper swiper-section-2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <!-- Product Item -->
+                  <div class="product-item">
+                    <div class="inner-image">
+                      <a href="#">
+                        <img src="assets/images/product-1.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="inner-discount">
+                      <i class="fa-solid fa-bolt"></i>
+                      Giảm -30%
+                    </div>
+                    <div class="inner-content">
+                      <h3 class="inner-title">
+                        <a href="#"> Hà Nội – Lào Cai – SaPa 4N3Đ </a>
+                      </h3>
+                      <div class="inner-prices">
+                        <div class="inner-price-old">
+                          13.650.000<span class="inner-unit">đ</span>
+                        </div>
+                        <div class="inner-price-new">
+                          2.590.000<span class="inner-unit">đ</span>
+                        </div>
+                      </div>
+                      <div class="inner-desc">
+                        <div class="inner-desc-item">
+                          Mã Tour: <b>123456789</b>
+                        </div>
+                        <div class="inner-desc-item">
+                          Ngày Khởi Hành: <b>22/07/2025</b>
+                        </div>
+                        <div class="inner-desc-item">
+                          Thời Gian: <b>10 Ngày 9 Đêm</b>
+                        </div>
+                      </div>
+                      <div class="inner-meta">
+                        <div class="inner-rating">
+                          <div class="inner-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="inner-number">(5)</div>
+                        </div>
+                        <div class="inner-stock">
+                          <div class="inner-label">Số chỗ còn:</div>
+                          <div class="inner-number">10</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="input-group">
-                  <i class="fa-solid fa-calendar-days icon"></i>
-                  <input type="text" placeholder="When?" />
+                <div class="swiper-slide">
+                  <div class="product-item">
+                    <div class="inner-image">
+                      <a href="#">
+                        <img src="assets/images/product-2.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="inner-discount">
+                      <i class="fa-solid fa-bolt"></i>
+                      Giảm -30%
+                    </div>
+                    <div class="inner-content">
+                      <h3 class="inner-title">
+                        <a href="#">
+                          Tour 2025 Phú Quốc – Thiên Đường Đảo Ngọc (3N2D)
+                        </a>
+                      </h3>
+                      <div class="inner-prices">
+                        <div class="inner-price-old">
+                          13.650.000<span class="inner-unit">đ</span>
+                        </div>
+                        <div class="inner-price-new">
+                          2.590.000<span class="inner-unit">đ</span>
+                        </div>
+                      </div>
+                      <div class="inner-desc">
+                        <div class="inner-desc-item">
+                          Mã Tour: <b>123456789</b>
+                        </div>
+                        <div class="inner-desc-item">
+                          Ngày Khởi Hành: <b>22/07/2025</b>
+                        </div>
+                        <div class="inner-desc-item">
+                          Thời Gian: <b>10 Ngày 9 Đêm</b>
+                        </div>
+                      </div>
+                      <div class="inner-meta">
+                        <div class="inner-rating">
+                          <div class="inner-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="inner-number">(5)</div>
+                        </div>
+                        <div class="inner-stock">
+                          <div class="inner-label">Số chỗ còn:</div>
+                          <div class="inner-number">10</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="search-input">
-                  <button class="search-btn btn">Search</button>
+                <div class="swiper-slide">
+                  <div class="product-item">
+                    <div class="inner-image">
+                      <a href="#">
+                        <img src="assets/images/product-3.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="inner-discount">
+                      <i class="fa-solid fa-bolt"></i>
+                      Giảm -30%
+                    </div>
+                    <div class="inner-content">
+                      <h3 class="inner-title">
+                        <a href="#">
+                          Combo Đà Nẵng 2025: ĐÀ NẴNG – HỘI AN – BÀ NÀ HILL
+                        </a>
+                      </h3>
+                      <div class="inner-prices">
+                        <div class="inner-price-old">
+                          13.650.000<span class="inner-unit">đ</span>
+                        </div>
+                        <div class="inner-price-new">
+                          2.590.000<span class="inner-unit">đ</span>
+                        </div>
+                      </div>
+                      <div class="inner-desc">
+                        <div class="inner-desc-item">
+                          Mã Tour: <b>123456789</b>
+                        </div>
+                        <div class="inner-desc-item">
+                          Ngày Khởi Hành: <b>22/07/2025</b>
+                        </div>
+                        <div class="inner-desc-item">
+                          Thời Gian: <b>10 Ngày 9 Đêm</b>
+                        </div>
+                      </div>
+                      <div class="inner-meta">
+                        <div class="inner-rating">
+                          <div class="inner-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="inner-number">(5)</div>
+                        </div>
+                        <div class="inner-stock">
+                          <div class="inner-label">Số chỗ còn:</div>
+                          <div class="inner-number">10</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </form>
-            </section>
-
-            <!-- HERO-MEDIA -->
-            <figure class="hero-media">
-              <img
-                src="./assets/images/tour-guide.svg"
-                alt=""
-                class="tour-guide"
-              />
-            </figure>
-          </section>
-
-          <!-- HEADER-EXPERIENCE -->
-          <div class="header-experience">
-            <div class="experience-block">
-              <img
-                src="./assets/images/icon-1.svg"
-                alt=""
-                class="icon-experience"
-              />
-              <div class="experience-content">
-                <h6 class="heading">Find authentic experiences</h6>
-                <p class="desc">
-                  Follow your curiosity, feel the joy of real discoveries, and
-                  explore more of the world.
-                </p>
-              </div>
-            </div>
-
-            <div class="experience-block">
-              <img
-                src="./assets/images/icon-2.svg"
-                alt=""
-                class="icon-experience"
-              />
-              <div class="experience-content">
-                <h6 class="heading">Book with your flexibility</h6>
-                <p class="desc">
-                  Get free cancellation, plan on the go, and book last minute.
-                  Discover the world your way.
-                </p>
-              </div>
-            </div>
-
-            <div class="experience-block">
-              <img
-                src="./assets/images/icon-3.svg"
-                alt=""
-                class="icon-experience"
-              />
-              <div class="experience-content">
-                <h6 class="heading">Explore the best possibilities</h6>
-                <p class="desc">
-                  Enjoy personalized recommendations and itineraries with over
-                  60,000+ guided tours.
-                </p>
+                <div class="swiper-slide">
+                  <div class="product-item">
+                    <div class="inner-image">
+                      <a href="#">
+                        <img src="assets/images/product-1.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="inner-discount">
+                      <i class="fa-solid fa-bolt"></i>
+                      Giảm -30%
+                    </div>
+                    <div class="inner-content">
+                      <h3 class="inner-title">
+                        <a href="#"> Hà Nội – Lào Cai – SaPa 4N3Đ </a>
+                      </h3>
+                      <div class="inner-prices">
+                        <div class="inner-price-old">
+                          13.650.000<span class="inner-unit">đ</span>
+                        </div>
+                        <div class="inner-price-new">
+                          2.590.000<span class="inner-unit">đ</span>
+                        </div>
+                      </div>
+                      <div class="inner-desc">
+                        <div class="inner-desc-item">
+                          Mã Tour: <b>123456789</b>
+                        </div>
+                        <div class="inner-desc-item">
+                          Ngày Khởi Hành: <b>22/07/2025</b>
+                        </div>
+                        <div class="inner-desc-item">
+                          Thời Gian: <b>10 Ngày 9 Đêm</b>
+                        </div>
+                      </div>
+                      <div class="inner-meta">
+                        <div class="inner-rating">
+                          <div class="inner-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="inner-number">(5)</div>
+                        </div>
+                        <div class="inner-stock">
+                          <div class="inner-label">Số chỗ còn:</div>
+                          <div class="inner-number">10</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-item">
+                    <div class="inner-image">
+                      <a href="#">
+                        <img src="assets/images/product-2.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="inner-discount">
+                      <i class="fa-solid fa-bolt"></i>
+                      Giảm -30%
+                    </div>
+                    <div class="inner-content">
+                      <h3 class="inner-title">
+                        <a href="#">
+                          Tour 2025 Phú Quốc – Thiên Đường Đảo Ngọc (3N2D)
+                        </a>
+                      </h3>
+                      <div class="inner-prices">
+                        <div class="inner-price-old">
+                          13.650.000<span class="inner-unit">đ</span>
+                        </div>
+                        <div class="inner-price-new">
+                          2.590.000<span class="inner-unit">đ</span>
+                        </div>
+                      </div>
+                      <div class="inner-desc">
+                        <div class="inner-desc-item">
+                          Mã Tour: <b>123456789</b>
+                        </div>
+                        <div class="inner-desc-item">
+                          Ngày Khởi Hành: <b>22/07/2025</b>
+                        </div>
+                        <div class="inner-desc-item">
+                          Thời Gian: <b>10 Ngày 9 Đêm</b>
+                        </div>
+                      </div>
+                      <div class="inner-meta">
+                        <div class="inner-rating">
+                          <div class="inner-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="inner-number">(5)</div>
+                        </div>
+                        <div class="inner-stock">
+                          <div class="inner-label">Số chỗ còn:</div>
+                          <div class="inner-number">10</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-item">
+                    <div class="inner-image">
+                      <a href="#">
+                        <img src="assets/images/product-3.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="inner-discount">
+                      <i class="fa-solid fa-bolt"></i>
+                      Giảm -30%
+                    </div>
+                    <div class="inner-content">
+                      <h3 class="inner-title">
+                        <a href="#">
+                          Combo Đà Nẵng 2025: ĐÀ NẴNG – HỘI AN – BÀ NÀ HILL
+                        </a>
+                      </h3>
+                      <div class="inner-prices">
+                        <div class="inner-price-old">
+                          13.650.000<span class="inner-unit">đ</span>
+                        </div>
+                        <div class="inner-price-new">
+                          2.590.000<span class="inner-unit">đ</span>
+                        </div>
+                      </div>
+                      <div class="inner-desc">
+                        <div class="inner-desc-item">
+                          Mã Tour: <b>123456789</b>
+                        </div>
+                        <div class="inner-desc-item">
+                          Ngày Khởi Hành: <b>22/07/2025</b>
+                        </div>
+                        <div class="inner-desc-item">
+                          Thời Gian: <b>10 Ngày 9 Đêm</b>
+                        </div>
+                      </div>
+                      <div class="inner-meta">
+                        <div class="inner-rating">
+                          <div class="inner-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="inner-number">(5)</div>
+                        </div>
+                        <div class="inner-stock">
+                          <div class="inner-label">Số chỗ còn:</div>
+                          <div class="inner-number">10</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-item">
+                    <div class="inner-image">
+                      <a href="#">
+                        <img src="assets/images/product-1.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="inner-discount">
+                      <i class="fa-solid fa-bolt"></i>
+                      Giảm -30%
+                    </div>
+                    <div class="inner-content">
+                      <h3 class="inner-title">
+                        <a href="#"> Hà Nội – Lào Cai – SaPa 4N3Đ </a>
+                      </h3>
+                      <div class="inner-prices">
+                        <div class="inner-price-old">
+                          13.650.000<span class="inner-unit">đ</span>
+                        </div>
+                        <div class="inner-price-new">
+                          2.590.000<span class="inner-unit">đ</span>
+                        </div>
+                      </div>
+                      <div class="inner-desc">
+                        <div class="inner-desc-item">
+                          Mã Tour: <b>123456789</b>
+                        </div>
+                        <div class="inner-desc-item">
+                          Ngày Khởi Hành: <b>22/07/2025</b>
+                        </div>
+                        <div class="inner-desc-item">
+                          Thời Gian: <b>10 Ngày 9 Đêm</b>
+                        </div>
+                      </div>
+                      <div class="inner-meta">
+                        <div class="inner-rating">
+                          <div class="inner-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <div class="inner-number">(5)</div>
+                        </div>
+                        <div class="inner-stock">
+                          <div class="inner-label">Số chỗ còn:</div>
+                          <div class="inner-number">10</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+    <!-- End Section 2 -->
 
-    <main>
-      <!-- PERFECT -->
-      <section class="perfect">
-        <div class="container">
-          <section class="perfect-inner">
-            <div class="perfect-info">
-              <h2 class="heading">Build your perfect road trip</h2>
-              <div class="info-desc">
-                <div class="minus-icon">
-                  <img src="./assets/images/minus-icon.svg" alt="" />
-                </div>
-                <div class="body">
-                  <h6>Add places with a click</h6>
-                  <p class="desc">
-                    We crawled the web so you don’t have to. Easily save
-                    mentioned places in short times.
-                  </p>
-                </div>
-              </div>
-              <div class="list-desc">
-                <div class="line">
-                  <img
-                    src="./assets/images/plus-icon.svg"
-                    alt=""
-                    class="plus-icon"
-                  />
-                  <p class="item-desc">Collaborate easily</p>
-                </div>
-                <div class="line">
-                  <img
-                    src="./assets/images/plus-icon.svg"
-                    alt=""
-                    class="plus-icon"
-                  />
-                  <p class="item-desc">Import flight and hotel reservations</p>
-                </div>
-                <div class="line">
-                  <img
-                    src="./assets/images/plus-icon.svg"
-                    alt=""
-                    class="plus-icon"
-                  />
-                  <p class="item-desc">Optimize your trip road</p>
-                </div>
-                <div class="line">
-                  <img
-                    src="./assets/images/plus-icon.svg"
-                    alt=""
-                    class="plus-icon"
-                  />
-                  <p class="item-desc">Get personalized suggestions</p>
-                </div>
-                <div class="line">
-                  <img
-                    src="./assets/images/plus-icon.svg"
-                    alt=""
-                    class="plus-icon"
-                  />
-                  <p class="item-desc">Export your places to Google Maps</p>
-                </div>
+    <!-- Section 3 -->
+    <div class="section-3">
+      <div class="container">
+        <h2 class="box-title" data-aos="fade-up" data-aos-duration="800">
+          Khuyến Mại Bùng Nổ - Đánh Tan Nóng Bức
+        </h2>
+        <div
+          class="swiper swiper-section-3"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="150"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="inner-item">
+                <a href="#">
+                  <img src="assets/images/banner-1.png" alt="" />
+                </a>
               </div>
             </div>
-            <div class="perfect-media">
-              <img
-                src="./assets/images/perfect-plan.svg"
-                alt=""
-                class="perfect-plan"
-              />
+            <div class="swiper-slide">
+              <div class="inner-item">
+                <a href="#">
+                  <img src="assets/images/banner-2.png" alt="" />
+                </a>
+              </div>
             </div>
-          </section>
-        </div>
-      </section>
-
-      <!-- SHARING -->
-      <section class="sharing">
-        <div class="container">
-          <section class="sharing-inner">
-            <div class="sharing-media">
-              <img src="./assets/images/sharing-media.png" alt="" />
+            <div class="swiper-slide">
+              <div class="inner-item">
+                <a href="#">
+                  <img src="assets/images/banner-3.png" alt="" />
+                </a>
+              </div>
             </div>
-            <section class="sharing-content">
-              <h2 class="heading">
-                We sharing insider travel knowledge for 20 years
-              </h2>
-              <p class="desc">
-                Our travel agency group tours are aimed at travelers looking to
-                discover the magic of this remarkable world. Our adventure
-                leaders will help you.
-              </p>
-              <ul class="list">
-                <li class="item">
-                  Supporting millions of travellers since 1982
-                </li>
-                <li class="item">
-                  More than 149 travel titles currently in print
-                </li>
-                <li class="item">The UK’s favourite travel guide publisher</li>
-                <li class="item">Outstanding customer satisfaction</li>
-              </ul>
-              <a href="#!" class="btn">Learn More</a>
-            </section>
-          </section>
+            <div class="swiper-slide">
+              <div class="inner-item">
+                <a href="#">
+                  <img src="assets/images/banner-2.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="inner-item">
+                <a href="#">
+                  <img src="assets/images/banner-3.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
-      </section>
+      </div>
+    </div>
+    <!-- End Section 3 -->
 
-      <!-- Domestic Tours -->
-      <section class="domestic-tours">
-        <div class="container">
+    <!-- Section 4 -->
+    <div class="section-4">
+      <div class="container">
+        <h2 class="box-title" data-aos="fade-up" data-aos-duration="800">
+          Tour Trong Nước
+        </h2>
+        <div
+          class="inner-wrap"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="150"
+        >
+          <!-- Product item -->
+          <div class="product-item">
+            <div class="inner-image">
+              <a href="#">
+                <img src="assets/images/product-1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="inner-discount">
+              <i class="fa-solid fa-bolt"></i>
+              Giảm -30%
+            </div>
+            <div class="inner-content">
+              <h3 class="inner-title">
+                <a href="#"> Hà Nội – Lào Cai – SaPa 4N3Đ </a>
+              </h3>
+              <div class="inner-prices">
+                <div class="inner-price-old">
+                  13.650.000<span class="inner-unit">đ</span>
+                </div>
+                <div class="inner-price-new">
+                  2.590.000<span class="inner-unit">đ</span>
+                </div>
+              </div>
+              <div class="inner-desc">
+                <div class="inner-desc-item">Mã Tour: <b>123456789</b></div>
+                <div class="inner-desc-item">
+                  Ngày Khởi Hành: <b>22/07/2025</b>
+                </div>
+                <div class="inner-desc-item">
+                  Thời Gian: <b>10 Ngày 9 Đêm</b>
+                </div>
+              </div>
+              <div class="inner-meta">
+                <div class="inner-rating">
+                  <div class="inner-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="inner-number">(5)</div>
+                </div>
+                <div class="inner-stock">
+                  <div class="inner-label">Số chỗ còn:</div>
+                  <div class="inner-number">10</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT-ITEM -->
+          <div class="product-item">
+            <div class="inner-image">
+              <a href="./tour-details.html">
+                <img src="./assets/images/product-6.jpg" alt="" />
+              </a>
+            </div>
+            <div class="inner-discount">
+              <i class="fa-solid fa-bolt"></i>
+              Giảm 30%
+            </div>
+            <div class="inner-content">
+              <h3 class="inner-title">
+                <a href="./tour-details.html">
+                  Tour 2025 Phu Quoc - Thien Duong Bao Ngoc (3N2D)
+                </a>
+              </h3>
+              <div class="inner-prices">
+                <div class="inner-price-old">
+                  13.650.000<span class="inner-init">đ</span>
+                </div>
+                <div class="inner-price-new">
+                  2.590.000<span class="inner-unit">đ</span>
+                </div>
+              </div>
+              <div class="inner-desc">
+                <div class="inner-desc-item">Mã tour: <b>123456789</b></div>
+                <div class="inner-desc-item">
+                  Ngày khởi hành: <b>22/07/2024</b>
+                </div>
+                <div class="inner-desc-item">
+                  Thời gian: <b>10 ngày 9 đêm</b>
+                </div>
+              </div>
+              <div class="inner-meta">
+                <div class="inner-rating">
+                  <div class="inner-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="inner-number">(5)</div>
+                </div>
+                <div class="inner-stock">
+                  <div class="inner-label">Số chỗ còn</div>
+                  <div class="inner-number">10</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT-ITEM -->
+          <div class="product-item">
+            <div class="inner-image">
+              <a href="./tour-details.html">
+                <img src="./assets/images/product-7.jpg" alt="" />
+              </a>
+            </div>
+            <div class="inner-discount">
+              <i class="fa-solid fa-bolt"></i>
+              Giảm 30%
+            </div>
+            <div class="inner-content">
+              <h3 class="inner-title">
+                <a href="./tour-details.html">
+                  Combo Da Nang 2024: Da Nang - Hoi An- Ba Na Hill
+                </a>
+              </h3>
+              <div class="inner-prices">
+                <div class="inner-price-old">
+                  13.650.000<span class="inner-init">đ</span>
+                </div>
+                <div class="inner-price-new">
+                  2.590.000<span class="inner-unit">đ</span>
+                </div>
+              </div>
+              <div class="inner-desc">
+                <div class="inner-desc-item">Mã tour: <b>123456789</b></div>
+                <div class="inner-desc-item">
+                  Ngày khởi hành: <b>22/07/2024</b>
+                </div>
+                <div class="inner-desc-item">
+                  Thời gian: <b>10 ngày 9 đêm</b>
+                </div>
+              </div>
+              <div class="inner-meta">
+                <div class="inner-rating">
+                  <div class="inner-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="inner-number">(5)</div>
+                </div>
+                <div class="inner-stock">
+                  <div class="inner-label">Số chỗ còn</div>
+                  <div class="inner-number">10</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT-ITEM -->
+          <div class="product-item">
+            <div class="inner-image">
+              <a href="./tour-details.html">
+                <img src="./assets/images/product-8.jpg" alt="" />
+              </a>
+            </div>
+            <div class="inner-discount">
+              <i class="fa-solid fa-bolt"></i>
+              Giảm 30%
+            </div>
+            <div class="inner-content">
+              <h3 class="inner-title">
+                <a href="./tour-details.html">
+                  Tour 2024: Nha Trang - VinWonders - Dao Binh Ba
+                </a>
+              </h3>
+              <div class="inner-prices">
+                <div class="inner-price-old">
+                  13.650.000<span class="inner-init">đ</span>
+                </div>
+                <div class="inner-price-new">
+                  2.590.000<span class="inner-unit">đ</span>
+                </div>
+              </div>
+              <div class="inner-desc">
+                <div class="inner-desc-item">Mã tour: <b>123456789</b></div>
+                <div class="inner-desc-item">
+                  Ngày khởi hành: <b>22/07/2024</b>
+                </div>
+                <div class="inner-desc-item">
+                  Thời gian: <b>10 ngày 9 đêm</b>
+                </div>
+              </div>
+              <div class="inner-meta">
+                <div class="inner-rating">
+                  <div class="inner-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="inner-number">(5)</div>
+                </div>
+                <div class="inner-stock">
+                  <div class="inner-label">Số chỗ còn</div>
+                  <div class="inner-number">10</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT-ITEM -->
+          <div class="product-item">
+            <div class="inner-image">
+              <a href="./tour-details.html">
+                <img src="./assets/images/product-9.jpg" alt="" />
+              </a>
+            </div>
+            <div class="inner-discount">
+              <i class="fa-solid fa-bolt"></i>
+              Giảm 30%
+            </div>
+            <div class="inner-content">
+              <h3 class="inner-title">
+                <a href="./tour-details.html">
+                  Combo Tour 2025: Sapa – Fansipan – Ban Cat Cat
+                </a>
+              </h3>
+              <div class="inner-prices">
+                <div class="inner-price-old">
+                  13.650.000<span class="inner-init">đ</span>
+                </div>
+                <div class="inner-price-new">
+                  2.590.000<span class="inner-unit">đ</span>
+                </div>
+              </div>
+              <div class="inner-desc">
+                <div class="inner-desc-item">Mã tour: <b>123456789</b></div>
+                <div class="inner-desc-item">
+                  Ngày khởi hành: <b>22/07/2024</b>
+                </div>
+                <div class="inner-desc-item">
+                  Thời gian:
+                  <b>10 ngày 9 đêm</b>
+                </div>
+              </div>
+              <div class="inner-meta">
+                <div class="inner-rating">
+                  <div class="inner-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="inner-number">(5)</div>
+                </div>
+                <div class="inner-stock">
+                  <div class="inner-label">Số chỗ còn</div>
+                  <div class="inner-number">10</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT-ITEM -->
+          <div class="product-item">
+            <div class="inner-image">
+              <a href="./tour-details.html">
+                <img src="./assets/images/product-10.jpg" alt="" />
+              </a>
+            </div>
+            <div class="inner-discount">
+              <i class="fa-solid fa-bolt"></i>
+              Giảm 30%
+            </div>
+            <div class="inner-content">
+              <h3 class="inner-title">
+                <a href="./tour-details.html">
+                  Tour 2025 Da Lat - Thanh pho ngan hoa (3N2D)
+                </a>
+              </h3>
+              <div class="inner-prices">
+                <div class="inner-price-old">
+                  13.650.000<span class="inner-init">đ</span>
+                </div>
+                <div class="inner-price-new">
+                  2.590.000<span class="inner-unit">đ</span>
+                </div>
+              </div>
+              <div class="inner-desc">
+                <div class="inner-desc-item">Mã tour: <b>123456789</b></div>
+                <div class="inner-desc-item">
+                  Ngày khởi hành: <b>22/07/2024</b>
+                </div>
+                <div class="inner-desc-item">
+                  Thời gian:
+                  <b>10 ngày 9 đêm</b>
+                </div>
+              </div>
+              <div class="inner-meta">
+                <div class="inner-rating">
+                  <div class="inner-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="inner-number">(5)</div>
+                </div>
+                <div class="inner-stock">
+                  <div class="inner-label">Số chỗ còn</div>
+                  <div class="inner-number">10</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT-ITEM -->
+          <div class="product-item">
+            <div class="inner-image">
+              <a href="./tour-details.html">
+                <img src="./assets/images/product-11.jpg" alt="" />
+              </a>
+            </div>
+            <div class="inner-discount">
+              <i class="fa-solid fa-bolt"></i>
+              Giảm 30%
+            </div>
+            <div class="inner-content">
+              <h3 class="inner-title">
+                <a href="./tour-details.html">
+                  Combo Da Nang 2025: Phu Quoc - Grand World
+                </a>
+              </h3>
+              <div class="inner-prices">
+                <div class="inner-price-old">
+                  13.650.000<span class="inner-init">đ</span>
+                </div>
+                <div class="inner-price-new">
+                  2.590.000<span class="inner-unit">đ</span>
+                </div>
+              </div>
+              <div class="inner-desc">
+                <div class="inner-desc-item">Mã tour: <b>123456789</b></div>
+                <div class="inner-desc-item">
+                  Ngày khởi hành: <b>22/07/2024</b>
+                </div>
+                <div class="inner-desc-item">
+                  Thời gian:
+                  <b>10 ngày 9 đêm</b>
+                </div>
+              </div>
+              <div class="inner-meta">
+                <div class="inner-rating">
+                  <div class="inner-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="inner-number">(5)</div>
+                </div>
+                <div class="inner-stock">
+                  <div class="inner-label">Số chỗ còn</div>
+                  <div class="inner-number">10</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT-ITEM -->
+          <div class="product-item">
+            <div class="inner-image">
+              <a href="./tour-details.html">
+                <img src="./assets/images/product-12.jpg" alt="" />
+              </a>
+            </div>
+            <div class="inner-discount">
+              <i class="fa-solid fa-bolt"></i>
+              Giảm 30%
+            </div>
+            <div class="inner-content">
+              <h3 class="inner-title">
+                <a href="./tour-details.html">
+                  Tour 2025: Mien Tay - Chau Doc - Rung Tram Tra Su
+                </a>
+              </h3>
+              <div class="inner-prices">
+                <div class="inner-price-old">
+                  13.650.000<span class="inner-init">đ</span>
+                </div>
+                <div class="inner-price-new">
+                  2.590.000<span class="inner-unit">đ</span>
+                </div>
+              </div>
+              <div class="inner-desc">
+                <div class="inner-desc-item">Mã tour: <b>123456789</b></div>
+                <div class="inner-desc-item">
+                  Ngày khởi hành: <b>22/07/2024</b>
+                </div>
+                <div class="inner-desc-item">
+                  Thời gian:
+                  <b>10 ngày 9 đêm</b>
+                </div>
+              </div>
+              <div class="inner-meta">
+                <div class="inner-rating">
+                  <div class="inner-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="inner-number">(5)</div>
+                </div>
+                <div class="inner-stock">
+                  <div class="inner-label">Số chỗ còn</div>
+                  <div class="inner-number">10</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="inner-button"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="150"
+        >
+          <a href="#" class="button-outline"> Xem tất cả </a>
+        </div>
+      </div>
+    </div>
+    <!-- End Section 4 -->
+
+    <!-- Section 6 -->
+    <div class="section-4">
+      <div class="container">
+        <h2 class="box-title" data-aos="fade-up" data-aos-duration="800">
+          Tour Nước Ngoài
+        </h2>
+        <div
+          class="inner-wrap"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="150"
+        >
+          <!-- Product item -->
+          <div class="product-item">
+            <div class="inner-image">
+              <a href="#">
+                <img src="assets/images/product-1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="inner-discount">
+              <i class="fa-solid fa-bolt"></i>
+              Giảm -30%
+            </div>
+            <div class="inner-content">
+              <h3 class="inner-title">
+                <a href="#"> Hà Nội – Lào Cai – SaPa 4N3Đ </a>
+              </h3>
+              <div class="inner-prices">
+                <div class="inner-price-old">
+                  13.650.000<span class="inner-unit">đ</span>
+                </div>
+                <div class="inner-price-new">
+                  2.590.000<span class="inner-unit">đ</span>
+                </div>
+              </div>
+              <div class="inner-desc">
+                <div class="inner-desc-item">Mã Tour: <b>123456789</b></div>
+                <div class="inner-desc-item">
+                  Ngày Khởi Hành: <b>22/07/2025</b>
+                </div>
+                <div class="inner-desc-item">
+                  Thời Gian: <b>10 Ngày 9 Đêm</b>
+                </div>
+              </div>
+              <div class="inner-meta">
+                <div class="inner-rating">
+                  <div class="inner-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="inner-number">(5)</div>
+                </div>
+                <div class="inner-stock">
+                  <div class="inner-label">Số chỗ còn:</div>
+                  <div class="inner-number">10</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT-ITEM -->
+          <div class="product-item">
+            <div class="inner-image">
+              <a href="./tour-details.html">
+                <img src="./assets/images/product-6.jpg" alt="" />
+              </a>
+            </div>
+            <div class="inner-discount">
+              <i class="fa-solid fa-bolt"></i>
+              Giảm 30%
+            </div>
+            <div class="inner-content">
+              <h3 class="inner-title">
+                <a href="./tour-details.html">
+                  Tour 2025 Phu Quoc - Thien Duong Bao Ngoc (3N2D)
+                </a>
+              </h3>
+              <div class="inner-prices">
+                <div class="inner-price-old">
+                  13.650.000<span class="inner-init">đ</span>
+                </div>
+                <div class="inner-price-new">
+                  2.590.000<span class="inner-unit">đ</span>
+                </div>
+              </div>
+              <div class="inner-desc">
+                <div class="inner-desc-item">Mã tour: <b>123456789</b></div>
+                <div class="inner-desc-item">
+                  Ngày khởi hành: <b>22/07/2024</b>
+                </div>
+                <div class="inner-desc-item">
+                  Thời gian: <b>10 ngày 9 đêm</b>
+                </div>
+              </div>
+              <div class="inner-meta">
+                <div class="inner-rating">
+                  <div class="inner-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="inner-number">(5)</div>
+                </div>
+                <div class="inner-stock">
+                  <div class="inner-label">Số chỗ còn</div>
+                  <div class="inner-number">10</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT-ITEM -->
+          <div class="product-item">
+            <div class="inner-image">
+              <a href="./tour-details.html">
+                <img src="./assets/images/product-7.jpg" alt="" />
+              </a>
+            </div>
+            <div class="inner-discount">
+              <i class="fa-solid fa-bolt"></i>
+              Giảm 30%
+            </div>
+            <div class="inner-content">
+              <h3 class="inner-title">
+                <a href="./tour-details.html">
+                  Combo Da Nang 2024: Da Nang - Hoi An- Ba Na Hill
+                </a>
+              </h3>
+              <div class="inner-prices">
+                <div class="inner-price-old">
+                  13.650.000<span class="inner-init">đ</span>
+                </div>
+                <div class="inner-price-new">
+                  2.590.000<span class="inner-unit">đ</span>
+                </div>
+              </div>
+              <div class="inner-desc">
+                <div class="inner-desc-item">Mã tour: <b>123456789</b></div>
+                <div class="inner-desc-item">
+                  Ngày khởi hành: <b>22/07/2024</b>
+                </div>
+                <div class="inner-desc-item">
+                  Thời gian: <b>10 ngày 9 đêm</b>
+                </div>
+              </div>
+              <div class="inner-meta">
+                <div class="inner-rating">
+                  <div class="inner-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="inner-number">(5)</div>
+                </div>
+                <div class="inner-stock">
+                  <div class="inner-label">Số chỗ còn</div>
+                  <div class="inner-number">10</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT-ITEM -->
+          <div class="product-item">
+            <div class="inner-image">
+              <a href="./tour-details.html">
+                <img src="./assets/images/product-8.jpg" alt="" />
+              </a>
+            </div>
+            <div class="inner-discount">
+              <i class="fa-solid fa-bolt"></i>
+              Giảm 30%
+            </div>
+            <div class="inner-content">
+              <h3 class="inner-title">
+                <a href="./tour-details.html">
+                  Tour 2024: Nha Trang - VinWonders - Dao Binh Ba
+                </a>
+              </h3>
+              <div class="inner-prices">
+                <div class="inner-price-old">
+                  13.650.000<span class="inner-init">đ</span>
+                </div>
+                <div class="inner-price-new">
+                  2.590.000<span class="inner-unit">đ</span>
+                </div>
+              </div>
+              <div class="inner-desc">
+                <div class="inner-desc-item">Mã tour: <b>123456789</b></div>
+                <div class="inner-desc-item">
+                  Ngày khởi hành: <b>22/07/2024</b>
+                </div>
+                <div class="inner-desc-item">
+                  Thời gian: <b>10 ngày 9 đêm</b>
+                </div>
+              </div>
+              <div class="inner-meta">
+                <div class="inner-rating">
+                  <div class="inner-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="inner-number">(5)</div>
+                </div>
+                <div class="inner-stock">
+                  <div class="inner-label">Số chỗ còn</div>
+                  <div class="inner-number">10</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT-ITEM -->
+          <div class="product-item">
+            <div class="inner-image">
+              <a href="./tour-details.html">
+                <img src="./assets/images/product-9.jpg" alt="" />
+              </a>
+            </div>
+            <div class="inner-discount">
+              <i class="fa-solid fa-bolt"></i>
+              Giảm 30%
+            </div>
+            <div class="inner-content">
+              <h3 class="inner-title">
+                <a href="./tour-details.html">
+                  Combo Tour 2025: Sapa – Fansipan – Ban Cat Cat
+                </a>
+              </h3>
+              <div class="inner-prices">
+                <div class="inner-price-old">
+                  13.650.000<span class="inner-init">đ</span>
+                </div>
+                <div class="inner-price-new">
+                  2.590.000<span class="inner-unit">đ</span>
+                </div>
+              </div>
+              <div class="inner-desc">
+                <div class="inner-desc-item">Mã tour: <b>123456789</b></div>
+                <div class="inner-desc-item">
+                  Ngày khởi hành: <b>22/07/2024</b>
+                </div>
+                <div class="inner-desc-item">
+                  Thời gian:
+                  <b>10 ngày 9 đêm</b>
+                </div>
+              </div>
+              <div class="inner-meta">
+                <div class="inner-rating">
+                  <div class="inner-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="inner-number">(5)</div>
+                </div>
+                <div class="inner-stock">
+                  <div class="inner-label">Số chỗ còn</div>
+                  <div class="inner-number">10</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT-ITEM -->
+          <div class="product-item">
+            <div class="inner-image">
+              <a href="./tour-details.html">
+                <img src="./assets/images/product-10.jpg" alt="" />
+              </a>
+            </div>
+            <div class="inner-discount">
+              <i class="fa-solid fa-bolt"></i>
+              Giảm 30%
+            </div>
+            <div class="inner-content">
+              <h3 class="inner-title">
+                <a href="./tour-details.html">
+                  Tour 2025 Da Lat - Thanh pho ngan hoa (3N2D)
+                </a>
+              </h3>
+              <div class="inner-prices">
+                <div class="inner-price-old">
+                  13.650.000<span class="inner-init">đ</span>
+                </div>
+                <div class="inner-price-new">
+                  2.590.000<span class="inner-unit">đ</span>
+                </div>
+              </div>
+              <div class="inner-desc">
+                <div class="inner-desc-item">Mã tour: <b>123456789</b></div>
+                <div class="inner-desc-item">
+                  Ngày khởi hành: <b>22/07/2024</b>
+                </div>
+                <div class="inner-desc-item">
+                  Thời gian:
+                  <b>10 ngày 9 đêm</b>
+                </div>
+              </div>
+              <div class="inner-meta">
+                <div class="inner-rating">
+                  <div class="inner-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="inner-number">(5)</div>
+                </div>
+                <div class="inner-stock">
+                  <div class="inner-label">Số chỗ còn</div>
+                  <div class="inner-number">10</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT-ITEM -->
+          <div class="product-item">
+            <div class="inner-image">
+              <a href="./tour-details.html">
+                <img src="./assets/images/product-11.jpg" alt="" />
+              </a>
+            </div>
+            <div class="inner-discount">
+              <i class="fa-solid fa-bolt"></i>
+              Giảm 30%
+            </div>
+            <div class="inner-content">
+              <h3 class="inner-title">
+                <a href="./tour-details.html">
+                  Combo Da Nang 2025: Phu Quoc - Grand World
+                </a>
+              </h3>
+              <div class="inner-prices">
+                <div class="inner-price-old">
+                  13.650.000<span class="inner-init">đ</span>
+                </div>
+                <div class="inner-price-new">
+                  2.590.000<span class="inner-unit">đ</span>
+                </div>
+              </div>
+              <div class="inner-desc">
+                <div class="inner-desc-item">Mã tour: <b>123456789</b></div>
+                <div class="inner-desc-item">
+                  Ngày khởi hành: <b>22/07/2024</b>
+                </div>
+                <div class="inner-desc-item">
+                  Thời gian:
+                  <b>10 ngày 9 đêm</b>
+                </div>
+              </div>
+              <div class="inner-meta">
+                <div class="inner-rating">
+                  <div class="inner-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="inner-number">(5)</div>
+                </div>
+                <div class="inner-stock">
+                  <div class="inner-label">Số chỗ còn</div>
+                  <div class="inner-number">10</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT-ITEM -->
+          <div class="product-item">
+            <div class="inner-image">
+              <a href="./tour-details.html">
+                <img src="./assets/images/product-12.jpg" alt="" />
+              </a>
+            </div>
+            <div class="inner-discount">
+              <i class="fa-solid fa-bolt"></i>
+              Giảm 30%
+            </div>
+            <div class="inner-content">
+              <h3 class="inner-title">
+                <a href="./tour-details.html">
+                  Tour 2025: Mien Tay - Chau Doc - Rung Tram Tra Su
+                </a>
+              </h3>
+              <div class="inner-prices">
+                <div class="inner-price-old">
+                  13.650.000<span class="inner-init">đ</span>
+                </div>
+                <div class="inner-price-new">
+                  2.590.000<span class="inner-unit">đ</span>
+                </div>
+              </div>
+              <div class="inner-desc">
+                <div class="inner-desc-item">Mã tour: <b>123456789</b></div>
+                <div class="inner-desc-item">
+                  Ngày khởi hành: <b>22/07/2024</b>
+                </div>
+                <div class="inner-desc-item">
+                  Thời gian:
+                  <b>10 ngày 9 đêm</b>
+                </div>
+              </div>
+              <div class="inner-meta">
+                <div class="inner-rating">
+                  <div class="inner-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="inner-number">(5)</div>
+                </div>
+                <div class="inner-stock">
+                  <div class="inner-label">Số chỗ còn</div>
+                  <div class="inner-number">10</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="inner-button"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="150"
+        >
+          <a href="#" class="button-outline"> Xem tất cả </a>
+        </div>
+      </div>
+    </div>
+    <!-- End Section 6 -->
+
+    <!-- TRAVEL DIARY -->
+    <section class="travel-diary">
+      <div class="container">
+        <!-- DIARY-HEADER -->
+        <div class="diary-header">
           <h2 class="heading" data-aos="fade-up" data-aos-duration="800">
-            Domestic Tours
+            Latest travel diary
           </h2>
-          <div
-            class="product-list"
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="150"
-          >
-            <!-- PRODUCT-ITEM -->
-            <div class="product-item">
-              <div class="inner-image">
-                <a href="./tour-details.html">
-                  <img src="./assets/images/product-5.jpg" alt="" />
-                </a>
-              </div>
-              <div class="inner-Giảm giá">
-                <i class="fa-solid fa-bolt"></i>
-                Giảm giá 30%
-              </div>
-              <div class="inner-content">
-                <h3 class="inner-title">
-                  <a href="./tour-details.html">
-                    Combo Tour 2024: Ha Noi - Lao Cai - Sapa 4N3D
-                  </a>
-                </h3>
-                <div class="inner-prices">
-                  <div class="inner-price-old">
-                    13.650.000<span class="inner-init">đ</span>
-                  </div>
-                  <div class="inner-price-new">
-                    2.590.000<span class="inner-unit">đ</span>
-                  </div>
-                </div>
-                <div class="inner-desc">
-                  <div class="inner-desc-item">Tour code: <b>123456789</b></div>
-                  <div class="inner-desc-item">
-                    Depature Date: <b>22/07/2024</b>
-                  </div>
-                  <div class="inner-desc-item">
-                    Duration: <b>10 days 9 nights</b>
-                  </div>
-                </div>
-                <div class="inner-meta">
-                  <div class="inner-rating">
-                    <div class="inner-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                    </div>
-                    <div class="inner-number">(5)</div>
-                  </div>
-                  <div class="inner-stock">
-                    <div class="inner-label">Available seats</div>
-                    <div class="inner-number">10</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <a href="#!" class="btn">Read All Blog</a>
+        </div>
 
-            <!-- PRODUCT-ITEM -->
-            <div class="product-item">
-              <div class="inner-image">
-                <a href="./tour-details.html">
-                  <img src="./assets/images/product-6.jpg" alt="" />
-                </a>
-              </div>
-              <div class="inner-Giảm giá">
-                <i class="fa-solid fa-bolt"></i>
-                Giảm giá 30%
-              </div>
-              <div class="inner-content">
-                <h3 class="inner-title">
-                  <a href="./tour-details.html">
-                    Tour 2025 Phu Quoc - Thien Duong Bao Ngoc (3N2D)
-                  </a>
-                </h3>
-                <div class="inner-prices">
-                  <div class="inner-price-old">
-                    13.650.000<span class="inner-init">đ</span>
-                  </div>
-                  <div class="inner-price-new">
-                    2.590.000<span class="inner-unit">đ</span>
-                  </div>
-                </div>
-                <div class="inner-desc">
-                  <div class="inner-desc-item">Tour code: <b>123456789</b></div>
-                  <div class="inner-desc-item">
-                    Depature Date: <b>22/07/2024</b>
-                  </div>
-                  <div class="inner-desc-item">
-                    Duration: <b>10 days 9 nights</b>
-                  </div>
-                </div>
-                <div class="inner-meta">
-                  <div class="inner-rating">
-                    <div class="inner-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                    </div>
-                    <div class="inner-number">(5)</div>
-                  </div>
-                  <div class="inner-stock">
-                    <div class="inner-label">Available seats</div>
-                    <div class="inner-number">10</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- PRODUCT-ITEM -->
-            <div class="product-item">
-              <div class="inner-image">
-                <a href="./tour-details.html">
-                  <img src="./assets/images/product-7.jpg" alt="" />
-                </a>
-              </div>
-              <div class="inner-Giảm giá">
-                <i class="fa-solid fa-bolt"></i>
-                Giảm giá 30%
-              </div>
-              <div class="inner-content">
-                <h3 class="inner-title">
-                  <a href="./tour-details.html">
-                    Combo Da Nang 2024: Da Nang - Hoi An- Ba Na Hill
-                  </a>
-                </h3>
-                <div class="inner-prices">
-                  <div class="inner-price-old">
-                    13.650.000<span class="inner-init">đ</span>
-                  </div>
-                  <div class="inner-price-new">
-                    2.590.000<span class="inner-unit">đ</span>
-                  </div>
-                </div>
-                <div class="inner-desc">
-                  <div class="inner-desc-item">Tour code: <b>123456789</b></div>
-                  <div class="inner-desc-item">
-                    Depature Date: <b>22/07/2024</b>
-                  </div>
-                  <div class="inner-desc-item">
-                    Duration: <b>10 days 9 nights</b>
-                  </div>
-                </div>
-                <div class="inner-meta">
-                  <div class="inner-rating">
-                    <div class="inner-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                    </div>
-                    <div class="inner-number">(5)</div>
-                  </div>
-                  <div class="inner-stock">
-                    <div class="inner-label">Available seats</div>
-                    <div class="inner-number">10</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- PRODUCT-ITEM -->
-            <div class="product-item">
-              <div class="inner-image">
-                <a href="./tour-details.html">
-                  <img src="./assets/images/product-8.jpg" alt="" />
-                </a>
-              </div>
-              <div class="inner-Giảm giá">
-                <i class="fa-solid fa-bolt"></i>
-                Giảm giá 30%
-              </div>
-              <div class="inner-content">
-                <h3 class="inner-title">
-                  <a href="./tour-details.html">
-                    Tour 2024: Nha Trang - VinWonders - Dao Binh Ba
-                  </a>
-                </h3>
-                <div class="inner-prices">
-                  <div class="inner-price-old">
-                    13.650.000<span class="inner-init">đ</span>
-                  </div>
-                  <div class="inner-price-new">
-                    2.590.000<span class="inner-unit">đ</span>
-                  </div>
-                </div>
-                <div class="inner-desc">
-                  <div class="inner-desc-item">Tour code: <b>123456789</b></div>
-                  <div class="inner-desc-item">
-                    Depature Date: <b>22/07/2024</b>
-                  </div>
-                  <div class="inner-desc-item">
-                    Duration: <b>10 days 9 nights</b>
-                  </div>
-                </div>
-                <div class="inner-meta">
-                  <div class="inner-rating">
-                    <div class="inner-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                    </div>
-                    <div class="inner-number">(5)</div>
-                  </div>
-                  <div class="inner-stock">
-                    <div class="inner-label">Available seats</div>
-                    <div class="inner-number">10</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- PRODUCT-ITEM -->
-            <div class="product-item">
-              <div class="inner-image">
-                <a href="./tour-details.html">
-                  <img src="./assets/images/product-9.jpg" alt="" />
-                </a>
-              </div>
-              <div class="inner-Giảm giá">
-                <i class="fa-solid fa-bolt"></i>
-                Giảm giá 30%
-              </div>
-              <div class="inner-content">
-                <h3 class="inner-title">
-                  <a href="./tour-details.html">
-                    Combo Tour 2025: Sapa – Fansipan – Ban Cat Cat
-                  </a>
-                </h3>
-                <div class="inner-prices">
-                  <div class="inner-price-old">
-                    13.650.000<span class="inner-init">đ</span>
-                  </div>
-                  <div class="inner-price-new">
-                    2.590.000<span class="inner-unit">đ</span>
-                  </div>
-                </div>
-                <div class="inner-desc">
-                  <div class="inner-desc-item">Tour code: <b>123456789</b></div>
-                  <div class="inner-desc-item">
-                    Depature Date: <b>22/07/2024</b>
-                  </div>
-                  <div class="inner-desc-item">
-                    Duration:
-                    <b>10 days 9 nights</b>
-                  </div>
-                </div>
-                <div class="inner-meta">
-                  <div class="inner-rating">
-                    <div class="inner-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                    </div>
-                    <div class="inner-number">(5)</div>
-                  </div>
-                  <div class="inner-stock">
-                    <div class="inner-label">Available seats</div>
-                    <div class="inner-number">10</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- PRODUCT-ITEM -->
-            <div class="product-item">
-              <div class="inner-image">
-                <a href="./tour-details.html">
-                  <img src="./assets/images/product-10.jpg" alt="" />
-                </a>
-              </div>
-              <div class="inner-Giảm giá">
-                <i class="fa-solid fa-bolt"></i>
-                Giảm giá 30%
-              </div>
-              <div class="inner-content">
-                <h3 class="inner-title">
-                  <a href="./tour-details.html">
-                    Tour 2025 Da Lat - Thanh pho ngan hoa (3N2D)
-                  </a>
-                </h3>
-                <div class="inner-prices">
-                  <div class="inner-price-old">
-                    13.650.000<span class="inner-init">đ</span>
-                  </div>
-                  <div class="inner-price-new">
-                    2.590.000<span class="inner-unit">đ</span>
-                  </div>
-                </div>
-                <div class="inner-desc">
-                  <div class="inner-desc-item">Tour code: <b>123456789</b></div>
-                  <div class="inner-desc-item">
-                    Depature Date: <b>22/07/2024</b>
-                  </div>
-                  <div class="inner-desc-item">
-                    Duration:
-                    <b>10 days 9 nights</b>
-                  </div>
-                </div>
-                <div class="inner-meta">
-                  <div class="inner-rating">
-                    <div class="inner-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                    </div>
-                    <div class="inner-number">(5)</div>
-                  </div>
-                  <div class="inner-stock">
-                    <div class="inner-label">Available seats</div>
-                    <div class="inner-number">10</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- PRODUCT-ITEM -->
-            <div class="product-item">
-              <div class="inner-image">
-                <a href="#!">
-                  <img src="./assets/images/product-11.jpg" alt="" />
-                </a>
-              </div>
-              <div class="inner-Giảm giá">
-                <i class="fa-solid fa-bolt"></i>
-                Giảm giá 30%
-              </div>
-              <div class="inner-content">
-                <h3 class="inner-title">
-                  <a href="./tour-details.html">
-                    Combo Da Nang 2025: Phu Quoc - Grand World
-                  </a>
-                </h3>
-                <div class="inner-prices">
-                  <div class="inner-price-old">
-                    13.650.000<span class="inner-init">đ</span>
-                  </div>
-                  <div class="inner-price-new">
-                    2.590.000<span class="inner-unit">đ</span>
-                  </div>
-                </div>
-                <div class="inner-desc">
-                  <div class="inner-desc-item">Tour code: <b>123456789</b></div>
-                  <div class="inner-desc-item">
-                    Depature Date: <b>22/07/2024</b>
-                  </div>
-                  <div class="inner-desc-item">
-                    Duration:
-                    <b>10 days 9 nights</b>
-                  </div>
-                </div>
-                <div class="inner-meta">
-                  <div class="inner-rating">
-                    <div class="inner-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                    </div>
-                    <div class="inner-number">(5)</div>
-                  </div>
-                  <div class="inner-stock">
-                    <div class="inner-label">Available seats</div>
-                    <div class="inner-number">10</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- PRODUCT-ITEM -->
-            <div class="product-item">
-              <div class="inner-image">
-                <a href="./tour-details.html">
-                  <img src="./assets/images/product-12.jpg" alt="" />
-                </a>
-              </div>
-              <div class="inner-Giảm giá">
-                <i class="fa-solid fa-bolt"></i>
-                Giảm giá 30%
-              </div>
-              <div class="inner-content">
-                <h3 class="inner-title">
-                  <a href="./tour-details.html">
-                    Tour 2025: Mien Tay - Chau Doc - Rung Tram Tra Su
-                  </a>
-                </h3>
-                <div class="inner-prices">
-                  <div class="inner-price-old">
-                    13.650.000<span class="inner-init">đ</span>
-                  </div>
-                  <div class="inner-price-new">
-                    2.590.000<span class="inner-unit">đ</span>
-                  </div>
-                </div>
-                <div class="inner-desc">
-                  <div class="inner-desc-item">Tour code: <b>123456789</b></div>
-                  <div class="inner-desc-item">
-                    Depature Date: <b>22/07/2024</b>
-                  </div>
-                  <div class="inner-desc-item">
-                    Duration:
-                    <b>10 days 9 nights</b>
-                  </div>
-                </div>
-                <div class="inner-meta">
-                  <div class="inner-rating">
-                    <div class="inner-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                    </div>
-                    <div class="inner-number">(5)</div>
-                  </div>
-                  <div class="inner-stock">
-                    <div class="inner-label">Available seats</div>
-                    <div class="inner-number">10</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <!-- DIARY-LIST -->
+        <div
+          class="diary-list"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="150"
+        >
+          <!-- DIARY-ITEM -->
+          <div class="diary-item">
+            <figure class="diary-thumb">
+              <a href="#!"><img src="./assets/images/diary-1.jpg" alt="" /></a>
+            </figure>
+            <h3 class="heading">
+              <a href="#!">8 Địa Điểm Tuyệt Vời Để Đón Năm Mới 2025</a>
+            </h3>
+            <p class="desc">
+              Dù là nâng ly sâm panh chào đón năm mới, tham gia tiệc đếm ngược
+              hay tận hưởng bữa tối ấm cúng, ai cũng lên kế hoạch cho một điều
+              gì đó thật đặc biệt...
+            </p>
+            <p class="learn-more">Tìm hiểu thêm</p>
           </div>
-          <div
-            class="product-link"
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="150"
-          >
-            <a href="./domestic-tours.html" class="btn">View All</a>
+
+          <!-- DIARY-ITEM -->
+          <div class="diary-item">
+            <figure class="diary-thumb">
+              <a href="#!">
+                <img src="./assets/images/diary-2.jpg" alt="" />
+              </a>
+            </figure>
+            <h3 class="heading">
+              <a href="#!">8 Địa Điểm Tuyệt Vời Để Đón Năm Mới 2025</a>
+            </h3>
+            <p class="desc">
+              Dù là nâng ly sâm panh chào đón năm mới, tham gia tiệc đếm ngược
+              hay tận hưởng bữa tối ấm cúng, ai cũng lên kế hoạch cho một điều
+              gì đó thật đặc biệt...
+            </p>
+            <div class="learn-more">Tìm hiểu thêm</div>
+          </div>
+
+          <!-- DIARY-ITEM -->
+          <div class="diary-item">
+            <figure class="diary-thumb">
+              <a href="#!">
+                <img src="./assets/images/diary-3.jpg" alt="" />
+              </a>
+            </figure>
+            <h3 class="heading">
+              <a href="#!">8 Địa Điểm Tuyệt Vời Để Đón Năm Mới 2025</a>
+            </h3>
+            <p class="desc">
+              Dù là nâng ly sâm panh chào đón năm mới, tham gia tiệc đếm ngược
+              hay tận hưởng bữa tối ấm cúng, ai cũng lên kế hoạch cho một điều
+              gì đó thật đặc biệt...
+            </p>
+            <div class="learn-more">Tìm hiểu thêm</div>
+          </div>
+
+          <!-- DIARY-ITEM -->
+          <div class="diary-item">
+            <figure class="diary-thumb">
+              <a href="#!">
+                <img src="./assets/images/diary-4.jpg" alt="" />
+              </a>
+            </figure>
+            <h3 class="heading">
+              <a href="#!"> 8 Địa Điểm Tuyệt Vời Để Đón Năm Mới 2025 </a>
+            </h3>
+            <p class="desc">
+              Dù là nâng ly sâm panh chào đón năm mới, tham gia tiệc đếm ngược
+              hay tận hưởng bữa tối ấm cúng, ai cũng lên kế hoạch cho một điều
+              gì đó thật đặc biệt...
+            </p>
+            <div class="learn-more">Tìm hiểu thêm</div>
           </div>
         </div>
-      </section>
-
-      <!-- International Tours -->
-      <section class="domestic-tours">
-        <div class="container">
-          <h2 class="heading" data-aos="fade-up" data-aos-duration="800">
-            International Tours
-          </h2>
-          <div
-            class="product-list"
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="150"
-          >
-            <!-- PRODUCT-ITEM -->
-            <div class="product-item">
-              <div class="inner-image">
-                <a href="./tour-details.html">
-                  <img src="./assets/images/product-5.jpg" alt="" />
-                </a>
-              </div>
-              <div class="inner-Giảm giá">
-                <i class="fa-solid fa-bolt"></i>
-                Giảm giá 30%
-              </div>
-              <div class="inner-content">
-                <h3 class="inner-title">
-                  <a href="./tour-details.html">
-                    Combo Tour 2024: Ha Noi - Lao Cai - Sapa 4N3D
-                  </a>
-                </h3>
-                <div class="inner-prices">
-                  <div class="inner-price-old">
-                    13.650.000<span class="inner-init">đ</span>
-                  </div>
-                  <div class="inner-price-new">
-                    2.590.000<span class="inner-unit">đ</span>
-                  </div>
-                </div>
-                <div class="inner-desc">
-                  <div class="inner-desc-item">Tour code: <b>123456789</b></div>
-                  <div class="inner-desc-item">
-                    Depature Date: <b>22/07/2024</b>
-                  </div>
-                  <div class="inner-desc-item">
-                    Duration: <b>10 days 9 nights</b>
-                  </div>
-                </div>
-                <div class="inner-meta">
-                  <div class="inner-rating">
-                    <div class="inner-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                    </div>
-                    <div class="inner-number">(5)</div>
-                  </div>
-                  <div class="inner-stock">
-                    <div class="inner-label">Available seats</div>
-                    <div class="inner-number">10</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- PRODUCT-ITEM -->
-            <div class="product-item">
-              <div class="inner-image">
-                <a href="./tour-details.html">
-                  <img src="./assets/images/product-6.jpg" alt="" />
-                </a>
-              </div>
-              <div class="inner-Giảm giá">
-                <i class="fa-solid fa-bolt"></i>
-                Giảm giá 30%
-              </div>
-              <div class="inner-content">
-                <h3 class="inner-title">
-                  <a href="./tour-details.html">
-                    Tour 2025 Phu Quoc - Thien Duong Bao Ngoc (3N2D)
-                  </a>
-                </h3>
-                <div class="inner-prices">
-                  <div class="inner-price-old">
-                    13.650.000<span class="inner-init">đ</span>
-                  </div>
-                  <div class="inner-price-new">
-                    2.590.000<span class="inner-unit">đ</span>
-                  </div>
-                </div>
-                <div class="inner-desc">
-                  <div class="inner-desc-item">Tour code: <b>123456789</b></div>
-                  <div class="inner-desc-item">
-                    Depature Date: <b>22/07/2024</b>
-                  </div>
-                  <div class="inner-desc-item">
-                    Duration: <b>10 days 9 nights</b>
-                  </div>
-                </div>
-                <div class="inner-meta">
-                  <div class="inner-rating">
-                    <div class="inner-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                    </div>
-                    <div class="inner-number">(5)</div>
-                  </div>
-                  <div class="inner-stock">
-                    <div class="inner-label">Available seats</div>
-                    <div class="inner-number">10</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- PRODUCT-ITEM -->
-            <div class="product-item">
-              <div class="inner-image">
-                <a href="./tour-details.html">
-                  <img src="./assets/images/product-7.jpg" alt="" />
-                </a>
-              </div>
-              <div class="inner-Giảm giá">
-                <i class="fa-solid fa-bolt"></i>
-                Giảm giá 30%
-              </div>
-              <div class="inner-content">
-                <h3 class="inner-title">
-                  <a href="./tour-details.html">
-                    Combo Da Nang 2024: Da Nang - Hoi An- Ba Na Hill
-                  </a>
-                </h3>
-                <div class="inner-prices">
-                  <div class="inner-price-old">
-                    13.650.000<span class="inner-init">đ</span>
-                  </div>
-                  <div class="inner-price-new">
-                    2.590.000<span class="inner-unit">đ</span>
-                  </div>
-                </div>
-                <div class="inner-desc">
-                  <div class="inner-desc-item">Tour code: <b>123456789</b></div>
-                  <div class="inner-desc-item">
-                    Depature Date: <b>22/07/2024</b>
-                  </div>
-                  <div class="inner-desc-item">
-                    Duration: <b>10 days 9 nights</b>
-                  </div>
-                </div>
-                <div class="inner-meta">
-                  <div class="inner-rating">
-                    <div class="inner-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                    </div>
-                    <div class="inner-number">(5)</div>
-                  </div>
-                  <div class="inner-stock">
-                    <div class="inner-label">Available seats</div>
-                    <div class="inner-number">10</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- PRODUCT-ITEM -->
-            <div class="product-item">
-              <div class="inner-image">
-                <a href="./tour-details.html">
-                  <img src="./assets/images/product-8.jpg" alt="" />
-                </a>
-              </div>
-              <div class="inner-Giảm giá">
-                <i class="fa-solid fa-bolt"></i>
-                Giảm giá 30%
-              </div>
-              <div class="inner-content">
-                <h3 class="inner-title">
-                  <a href="./tour-details.html">
-                    Tour 2024: Nha Trang - VinWonders - Dao Binh Ba
-                  </a>
-                </h3>
-                <div class="inner-prices">
-                  <div class="inner-price-old">
-                    13.650.000<span class="inner-init">đ</span>
-                  </div>
-                  <div class="inner-price-new">
-                    2.590.000<span class="inner-unit">đ</span>
-                  </div>
-                </div>
-                <div class="inner-desc">
-                  <div class="inner-desc-item">Tour code: <b>123456789</b></div>
-                  <div class="inner-desc-item">
-                    Depature Date: <b>22/07/2024</b>
-                  </div>
-                  <div class="inner-desc-item">
-                    Duration: <b>10 days 9 nights</b>
-                  </div>
-                </div>
-                <div class="inner-meta">
-                  <div class="inner-rating">
-                    <div class="inner-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                    </div>
-                    <div class="inner-number">(5)</div>
-                  </div>
-                  <div class="inner-stock">
-                    <div class="inner-label">Available seats</div>
-                    <div class="inner-number">10</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- PRODUCT-ITEM -->
-            <div class="product-item">
-              <div class="inner-image">
-                <a href="./tour-details.html">
-                  <img src="./assets/images/product-9.jpg" alt="" />
-                </a>
-              </div>
-              <div class="inner-Giảm giá">
-                <i class="fa-solid fa-bolt"></i>
-                Giảm giá 30%
-              </div>
-              <div class="inner-content">
-                <h3 class="inner-title">
-                  <a href="./tour-details.html">
-                    Combo Tour 2025: Sapa – Fansipan – Ban Cat Cat
-                  </a>
-                </h3>
-                <div class="inner-prices">
-                  <div class="inner-price-old">
-                    13.650.000<span class="inner-init">đ</span>
-                  </div>
-                  <div class="inner-price-new">
-                    2.590.000<span class="inner-unit">đ</span>
-                  </div>
-                </div>
-                <div class="inner-desc">
-                  <div class="inner-desc-item">Tour code: <b>123456789</b></div>
-                  <div class="inner-desc-item">
-                    Depature Date: <b>22/07/2024</b>
-                  </div>
-                  <div class="inner-desc-item">
-                    Duration:
-                    <b>10 days 9 nights</b>
-                  </div>
-                </div>
-                <div class="inner-meta">
-                  <div class="inner-rating">
-                    <div class="inner-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                    </div>
-                    <div class="inner-number">(5)</div>
-                  </div>
-                  <div class="inner-stock">
-                    <div class="inner-label">Available seats</div>
-                    <div class="inner-number">10</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- PRODUCT-ITEM -->
-            <div class="product-item">
-              <div class="inner-image">
-                <a href="./tour-details.html">
-                  <img src="./assets/images/product-10.jpg" alt="" />
-                </a>
-              </div>
-              <div class="inner-Giảm giá">
-                <i class="fa-solid fa-bolt"></i>
-                Giảm giá 30%
-              </div>
-              <div class="inner-content">
-                <h3 class="inner-title">
-                  <a href="./tour-details.html">
-                    Tour 2025 Da Lat - Thanh pho ngan hoa (3N2D)
-                  </a>
-                </h3>
-                <div class="inner-prices">
-                  <div class="inner-price-old">
-                    13.650.000<span class="inner-init">đ</span>
-                  </div>
-                  <div class="inner-price-new">
-                    2.590.000<span class="inner-unit">đ</span>
-                  </div>
-                </div>
-                <div class="inner-desc">
-                  <div class="inner-desc-item">Tour code: <b>123456789</b></div>
-                  <div class="inner-desc-item">
-                    Depature Date: <b>22/07/2024</b>
-                  </div>
-                  <div class="inner-desc-item">
-                    Duration:
-                    <b>10 days 9 nights</b>
-                  </div>
-                </div>
-                <div class="inner-meta">
-                  <div class="inner-rating">
-                    <div class="inner-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                    </div>
-                    <div class="inner-number">(5)</div>
-                  </div>
-                  <div class="inner-stock">
-                    <div class="inner-label">Available seats</div>
-                    <div class="inner-number">10</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- PRODUCT-ITEM -->
-            <div class="product-item">
-              <div class="inner-image">
-                <a href="./tour-details.html">
-                  <img src="./assets/images/product-11.jpg" alt="" />
-                </a>
-              </div>
-              <div class="inner-Giảm giá">
-                <i class="fa-solid fa-bolt"></i>
-                Giảm giá 30%
-              </div>
-              <div class="inner-content">
-                <h3 class="inner-title">
-                  <a href="./tour-details.html">
-                    Combo Da Nang 2025: Phu Quoc - Grand World
-                  </a>
-                </h3>
-                <div class="inner-prices">
-                  <div class="inner-price-old">
-                    13.650.000<span class="inner-init">đ</span>
-                  </div>
-                  <div class="inner-price-new">
-                    2.590.000<span class="inner-unit">đ</span>
-                  </div>
-                </div>
-                <div class="inner-desc">
-                  <div class="inner-desc-item">Tour code: <b>123456789</b></div>
-                  <div class="inner-desc-item">
-                    Depature Date: <b>22/07/2024</b>
-                  </div>
-                  <div class="inner-desc-item">
-                    Duration:
-                    <b>10 days 9 nights</b>
-                  </div>
-                </div>
-                <div class="inner-meta">
-                  <div class="inner-rating">
-                    <div class="inner-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                    </div>
-                    <div class="inner-number">(5)</div>
-                  </div>
-                  <div class="inner-stock">
-                    <div class="inner-label">Available seats</div>
-                    <div class="inner-number">10</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- PRODUCT-ITEM -->
-            <div class="product-item">
-              <div class="inner-image">
-                <a href="./tour-details.html">
-                  <img src="./assets/images/product-12.jpg" alt="" />
-                </a>
-              </div>
-              <div class="inner-Giảm giá">
-                <i class="fa-solid fa-bolt"></i>
-                Giảm giá 30%
-              </div>
-              <div class="inner-content">
-                <h3 class="inner-title">
-                  <a href="./tour-details.html">
-                    Tour 2025: Mien Tay - Chau Doc - Rung Tram Tra Su
-                  </a>
-                </h3>
-                <div class="inner-prices">
-                  <div class="inner-price-old">
-                    13.650.000<span class="inner-init">đ</span>
-                  </div>
-                  <div class="inner-price-new">
-                    2.590.000<span class="inner-unit">đ</span>
-                  </div>
-                </div>
-                <div class="inner-desc">
-                  <div class="inner-desc-item">Tour code: <b>123456789</b></div>
-                  <div class="inner-desc-item">
-                    Depature Date: <b>22/07/2024</b>
-                  </div>
-                  <div class="inner-desc-item">
-                    Duration:
-                    <b>10 days 9 nights</b>
-                  </div>
-                </div>
-                <div class="inner-meta">
-                  <div class="inner-rating">
-                    <div class="inner-stars">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                    </div>
-                    <div class="inner-number">(5)</div>
-                  </div>
-                  <div class="inner-stock">
-                    <div class="inner-label">Available seats</div>
-                    <div class="inner-number">10</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="product-link"
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="150"
-          >
-            <a href="./domestic-tours.html" class="btn">View All</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- TRAVEL DIARY -->
-      <section class="travel-diary">
-        <div class="container">
-          <!-- DIARY-HEADER -->
-          <div class="diary-header">
-            <h2 class="heading">Latest travel diary</h2>
-            <a href="#!" class="btn">Read All Blog</a>
-          </div>
-
-          <!-- DIARY-LIST -->
-          <div class="diary-list">
-            <!-- DIARY-ITEM -->
-            <div class="diary-item">
-              <figure class="diary-thumb">
-                <a href="#!"
-                  ><img src="./assets/images/diary-1.jpg" alt=""
-                /></a>
-              </figure>
-              <h3 class="heading">
-                <a href="#!">8 Amazing Places to Celebrate New Year 2025</a>
-              </h3>
-              <p class="desc">
-                Whether it’s champagne to ring in the New Year, a countdown
-                party, or an intimate dinner, everyone plans something
-                special...
-              </p>
-              <p class="learn-more">Learn More</p>
-            </div>
-
-            <!-- DIARY-ITEM -->
-            <div class="diary-item">
-              <figure class="diary-thumb">
-                <a href="#!">
-                  <img src="./assets/images/diary-2.jpg" alt="" />
-                </a>
-              </figure>
-              <h3 class="heading">
-                <a href="#!">8 Amazing Places to Celebrate New Year 2025</a>
-              </h3>
-              <p class="desc">
-                Whether it’s champagne to ring in the New Year, a countdown
-                party, or an intimate dinner, everyone plans something
-                special...
-              </p>
-              <div class="learn-more">Learn More</div>
-            </div>
-
-            <!-- DIARY-ITEM -->
-            <div class="diary-item">
-              <figure class="diary-thumb">
-                <a href="#!">
-                  <img src="./assets/images/diary-3.jpg" alt="" />
-                </a>
-              </figure>
-              <h3 class="heading">
-                <a href="#!">8 Amazing Places to Celebrate New Year 2025</a>
-              </h3>
-              <p class="desc">
-                Whether it’s champagne to ring in the New Year, a countdown
-                party, or an intimate dinner, everyone plans something
-                special...
-              </p>
-              <div class="learn-more">Learn More</div>
-            </div>
-
-            <!-- DIARY-ITEM -->
-            <div class="diary-item">
-              <figure class="diary-thumb">
-                <a href="#!">
-                  <img src="./assets/images/diary-4.jpg" alt="" />
-                </a>
-              </figure>
-              <h3 class="heading">
-                <a href="#!"> 8 Amazing Places to Celebrate New Year 2025 </a>
-              </h3>
-              <p class="desc">
-                Whether it’s champagne to ring in the New Year, a countdown
-                party, or an intimate dinner, everyone plans something
-                special...
-              </p>
-              <div class="learn-more">Learn More</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- TRAVEL MATTER -->
-      <section class="travel-matter">
-        <div class="container">
-          <section class="matter-inner">
-            <img
-              src="./assets/images/matter-avatar.png"
-              alt=""
-              class="matter-avatar"
-            />
-            <div class="matter-info">
-              <h2 class="heading">Travel matter</h2>
-              <p class="desc">
-                We believe sustainable tourism matters. MAKE TRAVEL MATTER® is
-                our commitment to preserving the planet.
-              </p>
-            </div>
-            <a href="#!" class="matter-btn btn">Find Destination</a>
-          </section>
-        </div>
-      </section>
-    </main>
+      </div>
+    </section>
+    <!-- END TRAVEL DIARY -->
 
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <div class="inner-top">
-          <div class="inner-title">
-            Register now so you don’t miss any of our special offers
-          </div>
+          <h2 class="inner-title">
+            Đăng ký ngay để không bỏ lỡ các chương trình của chúng tôi
+          </h2>
           <form action="" class="inner-form" id="email-form">
             <input
               id="email-input"
-              type="email"
               name="email"
-              placeholder="Enter email..."
+              type="email"
+              placeholder="Nhập email của bạn..."
             />
-            <button>Sign Up Now</button>
+            <button>Đăng Ký Ngay</button>
           </form>
         </div>
         <div class="inner-middle">
           <nav class="inner-links">
             <ul>
               <li>
-                <a href="./index.html">Home</a>
+                <a href="#">Trang Chủ</a>
               </li>
               <li>
-                <a href="./domestic-tours.html">Domestic Tours</a>
+                <a href="#">Tour Trong Nước</a>
               </li>
               <li>
-                <a href="#">International Tours</a>
+                <a href="#">Tour Nước Ngoài</a>
               </li>
               <li>
-                <a href="#">About</a>
+                <a href="#">Tin Tức</a>
               </li>
               <li>
-                <a href="#">Blog</a>
+                <a href="#">Liên Hệ</a>
               </li>
             </ul>
           </nav>
@@ -1367,21 +1767,19 @@
           </nav>
         </div>
         <div class="inner-bottom">
-          <div class="inner-copyright">
-            Copyright 2025 UIHUT All Rights Reserved
-          </div>
+          <div class="inner-copyright">© 2025 TQD. All rights reserved.</div>
           <div class="inner-logo">
-            <a href="#">
-              <img src="./assets/images/logo.svg" alt="" />
+            <a href="index.html">
+              <img src="assets/images/logo.svg" alt="" />
             </a>
           </div>
           <nav class="inner-links">
             <ul>
               <li>
-                <a href="#">Terms of Service</a>
+                <a href="#">Điều khoản dịch vụ</a>
               </li>
               <li>
-                <a href="#">Privacy Policy</a>
+                <a href="#">Chính sách bảo mật</a>
               </li>
             </ul>
           </nav>
