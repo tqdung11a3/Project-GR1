@@ -906,7 +906,7 @@ a {
 }
 
 .section-5 .inner-button-trash button,
-.section-5 .inner-button-create button {
+.section-5 .inner-button-trash a {
   background-color: #ef382633;
   color: #ef3826;
   font-weight: 700;
