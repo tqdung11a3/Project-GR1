@@ -9,3 +9,9 @@ module.exports.create = async (req, res) => {
     pageTitle: "Tạo mới tours",
   });
 };
+
+module.exports.trash = async (req, res) => {
+  res.render("admin/pages/tour-trash", {
+    pageTitle: "Danh sách tours đã xóa",
+  });
+};
