@@ -4,5 +4,6 @@ const settingController = require("../../controllers/admin/setting.controller");
 
 router.get("/list", settingController.list);
 router.get("/account-admin/list", settingController.accountAdminList);
+router.get("/account-admin/create", settingController.accountAdminCreate);
 
 module.exports = router;
