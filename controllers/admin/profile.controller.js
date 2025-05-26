@@ -3,3 +3,9 @@ module.exports.edit = async (req, res) => {
     pageTitle: "Thông tin cá nhân",
   });
 };
+
+module.exports.changePassword = async (req, res) => {
+  res.render("admin/pages/profile-change-password", {
+    pageTitle: "Đổi mật khẩu",
+  });
+};
