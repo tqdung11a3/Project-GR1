@@ -3,3 +3,9 @@ module.exports.list = async (req, res) => {
     pageTitle: "Danh sách tours",
   });
 };
+
+module.exports.create = async (req, res) => {
+  res.render("admin/pages/tour-create", {
+    pageTitle: "Tạo mới tours",
+  });
+};
