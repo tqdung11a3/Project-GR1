@@ -4,6 +4,12 @@ module.exports.list = async (req, res) => {
   });
 };
 
+module.exports.websiteInfo = async (req, res) => {
+  res.render("admin/pages/setting-website-info", {
+    pageTitle: "Thông tin trang web",
+  });
+};
+
 module.exports.accountAdminList = async (req, res) => {
   res.render("admin/pages/setting-account-admin-list", {
     pageTitle: "Tài khoản quản trị",
