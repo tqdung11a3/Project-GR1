@@ -32,6 +32,8 @@ module.exports.registerPost = async (req, res) => {
   const salt = await bcrypt.genSalt(10); // Tao chuoi ngau nhien co 10 ky tu
   const hashedPassword = await bcrypt.hash(password, salt);
 
+  console.log("Chay vao controller");
+
   const newAccount = new AccountAdmin({
     fullName: fullName,
     email: email,
