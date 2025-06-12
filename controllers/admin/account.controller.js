@@ -16,8 +16,7 @@ module.exports.login = async (req, res) => {
 module.exports.loginPost = async (req, res) => {
   const { email, password, rememberPassword } = req.body;
 
-  // Kiem tra email co ton tai khong
-
+  // Kiểm tra xem email có tồn tại không
   const existAccount = await AccountAdmin.findOne({
     email: email,
   });
@@ -25,33 +24,31 @@ module.exports.loginPost = async (req, res) => {
   if (!existAccount) {
     res.json({
       code: "error",
-      message: "Email khong ton tai trong he thong",
+      message: "Email không tồn tại trong hệ thống!",
     });
     return;
   }
 
-  // Kiem tra mat khau xem co dung hay khong
-
+  // Kiểm tra mật khẩu
   const isPasswordValid = await bcrypt.compare(password, existAccount.password);
   if (!isPasswordValid) {
     res.json({
       code: "error",
-      message: "Mat khau khong dung",
+      message: "Mật khẩu không đúng!",
     });
     return;
   }
 
-  // Kiem tra tai khoan da duoc kich hoat hay chua
-
+  // Kiểm tra tài khoản đã được kích hoạt chưa
   if (existAccount.status != "active") {
     res.json({
       code: "error",
-      message: "Tai khoan chua duoc kich hoat",
+      message: "Tài khoản chưa được kích hoạt!",
     });
     return;
   }
 
-  // Tao JWT
+  // Tạo JWT
   const token = jwt.sign(
     {
       id: existAccount.id,
@@ -65,13 +62,13 @@ module.exports.loginPost = async (req, res) => {
 
   res.cookie("token", token, {
     maxAge: rememberPassword ? 30 * 24 * 60 * 60 * 1000 : 24 * 60 * 60 * 1000, // Token lưu trong cookie 30 ngày hoặc 1 ngày
-    httpOnly: true, // Cho phep server duoc truy cap cookie nay
-    sameSite: "strict", // Khong gui duoc yeu cau tu website khac
+    httpOnly: true, // Chỉ cho phép server được truy cập cookie này
+    sameSite: "strict", // Không gửi được yêu cầu từ website khác
   });
 
   res.json({
     code: "success",
-    message: "Dang nhap tai khoan thanh cong",
+    message: "Đăng nhập tài khoản thành công!",
   });
 };
 
@@ -91,16 +88,14 @@ module.exports.registerPost = async (req, res) => {
   if (existAccount) {
     res.json({
       code: "error",
-      message: "Email da ton tai trong he thong",
+      message: "Email đã tồn tại trong hệ thống!",
     });
     return;
   }
 
-  // Ma hoa mat khau voi bcryptjs
-  const salt = await bcrypt.genSalt(10); // Tao chuoi ngau nhien co 10 ky tu
+  // Mã hóa mật khẩu với bcrypt
+  const salt = await bcrypt.genSalt(10); // Tạo chuỗi ngẫu nhiên có 10 ký tự
   const hashedPassword = await bcrypt.hash(password, salt);
-
-  console.log("Chay vao controller");
 
   const newAccount = new AccountAdmin({
     fullName: fullName,
@@ -108,18 +103,17 @@ module.exports.registerPost = async (req, res) => {
     password: hashedPassword,
     status: "initial",
   });
-
   await newAccount.save();
 
   res.json({
     code: "success",
-    message: "Dang ky tai khoan thanh cong",
+    message: "Đăng ký tài khoản thành công!",
   });
 };
 
 module.exports.registerInitial = async (req, res) => {
   res.render("admin/pages/register-initial", {
-    pageTitle: "Tai khoan da duoc khoi tao",
+    pageTitle: "Tài khoản đã được khởi tạo",
   });
 };
 
@@ -187,9 +181,75 @@ module.exports.otpPassword = async (req, res) => {
   });
 };
 
+module.exports.otpPasswordPost = async (req, res) => {
+  const { email, otp } = req.body;
+
+  const existRecord = await ForgotPassword.findOne({
+    otp: otp,
+    email: email,
+  });
+
+  if (!existRecord) {
+    res.json({
+      code: "error",
+      message: "Mã OTP không chính xác!",
+    });
+    return;
+  }
+
+  const account = await AccountAdmin.findOne({
+    email: email,
+  });
+
+  // Tạo JWT
+  const token = jwt.sign(
+    {
+      id: account.id,
+      email: account.email,
+    },
+    process.env.JWT_SECRET,
+    {
+      expiresIn: "1d", // Token có thời hạn 1 ngày
+    }
+  );
+
+  res.cookie("token", token, {
+    maxAge: 24 * 60 * 60 * 1000, // Token lưu trong cookie 1 ngày
+    httpOnly: true, // Chỉ cho phép server được truy cập cookie này
+    sameSite: "strict", // Không gửi được yêu cầu từ website khác
+  });
+
+  res.json({
+    code: "success",
+    message: "Xác thực OTP thành công!",
+  });
+};
+
 module.exports.resetPassword = async (req, res) => {
   res.render("admin/pages/reset-password", {
     pageTitle: "Đổi mật khẩu",
+  });
+};
+
+module.exports.resetPasswordPost = async (req, res) => {
+  const { password } = req.body;
+
+  // Mã hóa mật khẩu với bcrypt
+  const salt = await bcrypt.genSalt(10); // Tạo chuỗi ngẫu nhiên có 10 ký tự
+  const hashedPassword = await bcrypt.hash(password, salt);
+
+  await AccountAdmin.updateOne(
+    {
+      _id: req.account.id,
+    },
+    {
+      password: hashedPassword,
+    }
+  );
+
+  res.json({
+    code: "success",
+    message: "Đổi mật khẩu thành công!",
   });
 };
 
