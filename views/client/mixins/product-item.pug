@@ -2,7 +2,7 @@ mixin product-item(item)
   // Product Item
   .product-item
     .inner-image
-      a(href=item.slug)
+      a(href="/tours/detail")
         img(
           alt=item.name
           src=item.avatar
@@ -12,7 +12,7 @@ mixin product-item(item)
       | Giảm -#{item.discount}%
     .inner-content
       h3.inner-title
-        a(href=item.slug) #{item.name}
+        a(href="/tours/detail") #{item.name}
       .inner-prices
         if(item.discount > 0)
           .inner-price-old
