@@ -60,3 +60,29 @@ module.exports.registerPost = (req, res, next) => {
 
   next();
 };
+
+module.exports.loginPost = (req, res, next) => {
+  const schema = Joi.object({
+    email: Joi.string().required().email().messages({
+      "string.empty": "Vui long nhap email!",
+      "string.email": "Email khong dung dinh dang",
+    }),
+    password: Joi.string().required().messages({
+      "string.empty": "Vui lòng nhập mật khẩu!",
+    }),
+  });
+
+  const { error } = schema.validate(req.body);
+
+  if (error) {
+    const errorMessage = error.details[0].message;
+
+    res.json({
+      code: "error",
+      message: errorMessage,
+    });
+    return;
+  }
+
+  next();
+};
