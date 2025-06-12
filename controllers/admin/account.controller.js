@@ -9,7 +9,7 @@ module.exports.login = async (req, res) => {
 };
 
 module.exports.loginPost = async (req, res) => {
-  const { email, password } = req.body;
+  const { email, password, rememberPassword } = req.body;
 
   // Kiem tra email co ton tai khong
 
@@ -54,12 +54,12 @@ module.exports.loginPost = async (req, res) => {
     },
     process.env.JWT_SECRET,
     {
-      expiresIn: "1d", // token co thoi han 1 ngay
+      expiresIn: rememberPassword ? "30d" : "1d", // Token có thời hạn 30 ngày hoặc 1 ngày
     }
   );
 
   res.cookie("token", token, {
-    maxAge: 24 * 60 * 60 * 1000, // token luu trong 1 ngay
+    maxAge: rememberPassword ? 30 * 24 * 60 * 60 * 1000 : 24 * 60 * 60 * 1000, // Token lưu trong cookie 30 ngày hoặc 1 ngày
     httpOnly: true, // Cho phep server duoc truy cap cookie nay
     sameSite: "strict", // Khong gui duoc yeu cau tu website khac
   });
